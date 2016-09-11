@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Exercise 9.27, Assignment 5</title>
+    <style type="text/css">
+    .title {
+	    color:#283f71;
+	    font-weight:bold;
+	    text-align:center;
+	    font-size: 14pt;
+    }
+     .commontext
+    {
+	    font-size: 13pt;
+	    font-family:Arial, Helvetica, sans-serif;   
+    }
+    
+    </style>
+    
+  <SCRIPT type=text/javascript>
+         //var result;
+         
+         function generateNumbers()
+         {
+            document.getElementById("txtFirstNumber").value=Math.floor(1+Math.random()*9);
+            document.getElementById("txtSecondNumber").value=Math.floor(1+Math.random()*9);
+            document.getElementById("txtResult").value="";
+            document.getElementById("txtMessage").value="";
+            
+         }
+         
+         function Check()
+         {
+            var number1, number2, result; 
+            number1=parseInt(document.getElementById("txtFirstNumber").value);
+            number2=parseInt(document.getElementById("txtSecondNumber").value);
+            result=number1*number2;
+            if(result==parseInt(document.getElementById("txtResult").value))
+            {
+                document.getElementById("txtMessage").value="Congratulations! Your answer is correct."
+                return true;
+            }
+            else
+            {
+                document.getElementById("txtMessage").value="Your answer is not correct. Try again."
+                return false;
+            }
+         }
+         
+         function getNewTask()
+         {
+            //if(result!=parseInt(document.getElementById("txtResult").value))
+            if(Check()==false)
+            {
+                
+                window.alert("You are not eligible to get new exercise until you provide correct answer.");
+            }
+            else
+            {
+                document.getElementById("txtFirstNumber").value=Math.floor(1+Math.random()*9);
+                document.getElementById("txtSecondNumber").value=Math.floor(1+Math.random()*9);
+                document.getElementById("txtResult").value="";
+                document.getElementById("txtMessage").value="";
+            }
+         
+         }
+         
+             
+      </SCRIPT>
+
+</head>
+<body onload="generateNumbers()">
+<form action="">
+<p class="title">Exercises of multiplication</p>
+    <input id="txtFirstNumber" style="width: 76px" type="text" readonly="readonly"/>&nbsp; * &nbsp;<input id="txtSecondNumber"
+        style="width: 76px" type="text" readonly="readonly"/>&nbsp;
+    =
+    <input id="txtResult" style="width: 76px" type="text" /> 
+    &nbsp;&nbsp;&nbsp;
+    <input id="txtMessage" style="width: 367px; color: Red; font-size: 13pt;" type="text" readonly="readonly"/><br />
+    <br />
+    <input id="btnCheck" type="button" value="Check" onclick="Check()"/>&nbsp;&nbsp;
+    &nbsp;
+    <input id="btnNewProblem" type="button" value="New Problem"  onclick="getNewTask()"/><br />
+
+<center><h2><a href=assignment5.htm>Go back to assignment 5</a></h2></center>
+</form>
+</body>
+</html>

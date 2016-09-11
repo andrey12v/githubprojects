@@ -1,0 +1,10 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Ex20_3.DisplayTables.resources
+obj\Debug\Ex20_3.Properties.Resources.resources
+obj\Debug\Ex20_3.csproj.GenerateResource.Cache
+bin\Debug\Books.mdb
+bin\Debug\Ex20_3.exe.config
+bin\Debug\Ex20_3.exe
+bin\Debug\Ex20_3.pdb
+obj\Debug\Ex20_3.exe
+obj\Debug\Ex20_3.pdb

@@ -1,0 +1,45 @@
+Name:    Andrey Vasilyev
+Class:   CSIS 252
+Program: Assignment 1
+Date:    09/10/07
+
+Description of the program.
+Program is designed to work with date and time. Program provides the functionality to set, get the date in different formats, add or subtract the number of days, date from another date. Program also includes the functionality to work with different types of time like Civilian, Military or Detailed. Moreover the program always performs input data validation and if the entered data is incorrect the program throws exception.  
+
+The program carries out the following operations for Date:
+1) Set, get date
+2) Get current date 
+3) Set output formats for the date: TEXT, NUMERIC, FULLTEXT, FULLNUMERIC
+4) Subtract, add number of days from the date or perform the same operations between two dates
+5) Calculate the year difference, day difference, between two dates, 
+6) Calculate the number of days from the current date until the next occurrence of the date argument
+7) Perform different types of comparisons between two dates like equal, <=, =>, <, >
+8) Perform input data validation. If the date was entered incorrectly the program will catch the error and displays error message.  The errors could happen if the year, month and day are negative or equal to zero; if the number of days exceeds possible number of days for expected month. 
+
+The program carries out the following operations for Time:
+1) Set, get time
+2) Get current time 
+3) Set output formats for the time: CIVILIAN, MILITARY, DETAILED
+7) Perform different types of comparisons between two time sets like equal, <=, =>, <, >
+8) Perform input data validation. If the time was entered incorrectly the program will catch the error and displays error message.  The errors could happen if the hour is equal to zero in the case of Civilian format; if hour, minute or second are negative numbers   
+
+Input and output of the program 
+The program doesn’t allow inputting data from the screen or file. 
+The program outputs the results of date and time manipulations on the console screen. The program outputs return data from the methods of date and time classes for testing reasons.  
+The program outputs the following:
+1) The name of operator or method. If the method is correct or not correspond word “Correct” or “NOT correct” outputs. 
+2) The error message if the date or time is invalid
+3) Output formats for date and time
+
+Program design
+The program has two header and implementation files for classes Date and Time. Each class Date and Time has corresponding name spaces. The namespaces are included in the main function to provide the access for the classes.  The class time and date have exception classes to catch the errors in case of invalid input in the methods. Exception classes have default, parameterized constructors and the method what() that allows to output corresponding error message. 
+
+A listing of the files in the distribution    
+Main.cpp 		main()			main function	
+Date.h			Declaration and 	Declare and implement the class Date 
+			implementation
+Time.h			Declaration and 	Declare and implement the class Time 
+			implementation
+
+Test of the program
+The methods of classes Date and Time were tested. As a result of testing it was possible to figure out the situation when the date and time are invalid and when exception should be thrown.

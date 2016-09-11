@@ -1,0 +1,16 @@
+D:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\obj\Debug\ResolveAssemblyReference.cache
+D:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\bin\Debug\TestAccountHirarchy.exe
+D:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\bin\Debug\TestAccountHirarchy.pdb
+D:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\bin\Debug\Ex10_10.dll
+D:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\bin\Debug\Ex10_10.pdb
+D:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\obj\Debug\TestAccountHirarchy.exe
+D:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\obj\Debug\TestAccountHirarchy.pdb
+I:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\obj\Debug\TestAccountHirarchy.exe
+I:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\obj\Debug\TestAccountHirarchy.pdb
+I:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\bin\Debug\TestAccountHirarchy.exe
+I:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\bin\Debug\TestAccountHirarchy.pdb
+I:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\bin\Debug\Ex10_10.dll
+I:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\bin\Debug\Ex10_10.pdb
+I:\C#programming\assignment4\Ex10_10\TestAccountHirarchy\obj\Debug\ResolveAssemblyReference.cache
+I:\C#programming\assignment4\A04\Ex10_10\TestAccountHirarchy\obj\Debug\TestAccountHirarchy.exe
+I:\C#programming\assignment4\A04\Ex10_10\TestAccountHirarchy\obj\Debug\TestAccountHirarchy.pdb

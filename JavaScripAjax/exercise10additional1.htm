@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Exercise 10.12, Assignment 6</title>
+    <style type="text/css">
+    .title 
+    {
+	    color:#283f71;
+	    font-weight:bold;
+	    text-align:center;
+	    font-size: 14pt;
+    }
+     .commontext
+    {
+	    font-size: 13pt;
+	    font-family:Arial, Helvetica, sans-serif;   
+    }
+    
+    </style>
+    
+  <SCRIPT type=text/javascript>
+         var arr = new Array(5);
+         for(i=0; i<5; i++)
+         {
+              arr[i]= new Array(2);
+         }
+                  
+         var i, j;
+         
+         function rollDiceFirstTime()
+         {
+           
+            
+            for(i=0; i<arr.length; i++)
+            {
+                for(j=0; j<arr[i].length; j++)
+                {
+                    if(j==0)
+                    {
+                        arr[i][j]=Math.floor(1+Math.random()*6);
+                    }
+                    else
+                    {
+                        arr[i][j]=0;
+                    }
+                }
+            }
+            
+            document.getElementById('btnDie1').value="dfsdfdsf";
+            for(i=0; i<arr.length; i++)
+            {
+                document.getElementById('die' + (i+1)).innerHTML = arr[i][0];
+                document.getElementById('btnDie' + (i+1)).value="roll";
+            }
+
+         }
+         
+         function rollDie1()
+         {
+            if(window.document.diceForm.btnDie1.value == "roll")
+            {
+                window.document.diceForm.btnDie1.value = "held";
+                arr[0][1]=1;
+            }
+            else
+            {
+                window.document.diceForm.btnDie1.value = "roll";
+                arr[0][1]=0;
+            }
+         }
+         
+         function rollDie2()
+         {
+            if(window.document.diceForm.btnDie2.value == "roll")
+            {
+                window.document.diceForm.btnDie2.value = "held";
+                arr[1][1]=1;
+            }
+            else
+            {
+                window.document.diceForm.btnDie2.value = "roll";
+                arr[1][1]=0;
+            }
+         }
+         
+         function rollDie3()
+         {
+            if(window.document.diceForm.btnDie3.value == "roll")
+            {
+                window.document.diceForm.btnDie3.value = "held";
+                arr[2][1]=1;
+            }
+            else
+            {
+                window.document.diceForm.btnDie3.value = "roll";
+                arr[2][1]=0;
+            }
+         }
+         
+         function rollDie4()
+         {
+            if(window.document.diceForm.btnDie4.value == "roll")
+            {
+                window.document.diceForm.btnDie4.value = "held";
+                arr[3][1]=1;
+            }
+            else
+            {
+                window.document.diceForm.btnDie4.value = "roll";
+                arr[3][1]=0;
+            }
+         }
+         
+         function rollDie5()
+         {
+            if(window.document.diceForm.btnDie5.value == "roll")
+            {
+                window.document.diceForm.btnDie5.value = "held";
+                arr[4][1]=1;
+            }
+            else
+            {
+                window.document.diceForm.btnDie5.value = "roll";
+                arr[4][1]=0;
+            }
+         }
+         
+         function rollDice()
+         {
+            for(i=0; i<5; i++)
+            {
+                if(document.getElementById('btnDie' + (i+1)).value=="roll")
+                {
+                    arr[i][0]=Math.floor(1+Math.random()*6);
+                    document.getElementById('die' + (i+1)).innerHTML = arr[i][0];
+                }
+            }  
+         }
+         
+         function rollAll()
+         {
+            for(i=0; i<5; i++)
+            {
+                arr[i][0]=Math.floor(1+Math.random()*6);
+                arr[i][1]=1;
+                document.getElementById('btnDie' + (i+1)).value="roll"
+                document.getElementById('die' + (i+1)).innerHTML = arr[i][0];
+            }
+         
+         }
+         
+      </SCRIPT>
+
+</head>
+<body onload="rollDiceFirstTime()">
+<form action="" name="diceForm">
+<p class="title">Roll dice&nbsp;</p>  <br />
+    &nbsp; &nbsp;&nbsp;<br />
+
+<table border="1">
+<tr>
+<td>die1</td>
+<td>die2</td>
+<td>die3</td>
+<td>die4</td>
+<td>die5</td>
+</tr>
+
+<tr>
+<td id="die1">
+</td>
+<td id="die2">
+</td>
+<td id="die3">
+</td>
+<td id="die4">
+</td>
+<td id="die5">
+</td>
+</tr>
+
+<tr>
+<td>
+    <input id="btnDie1" type="button" onclick="rollDie1()"/></td>
+<td>
+    <input id="btnDie2" type="button" onclick="rollDie2()"/></td>
+<td>
+    <input id="btnDie3" type="button" onclick="rollDie3()"/></td>
+<td>
+    <input id="btnDie4" type="button" onclick="rollDie4()"/></td>
+<td>
+    <input id="btnDie5" type="button" onclick="rollDie5()"/></td>
+</tr>
+
+</table><br />
+    <input id="btnRollDice" type="button" value="roll dice" onclick="rollDice()"/>
+    &nbsp; &nbsp;
+    <input id="btnRollAll" type="button" value="roll all" onclick="rollAll()"/>&nbsp;
+
+<center><h2><a href=assignment6.htm>Go back to assignment 6</a></h2></center>
+</form>
+</body>
+</html>

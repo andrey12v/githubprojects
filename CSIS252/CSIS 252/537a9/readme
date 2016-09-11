@@ -1,0 +1,51 @@
+Name:    Andrey Vasilyev
+Class:   CSIS 252
+Program: Assignment 9
+Date:    11/05/07
+The program carries out the following operations:
+1) creates the objects of class stack and queue
+2) input character from the keyboard into the array of stack and queue
+3) compares characters from the array and queue to figure out a palindrome
+4) if the words from the queue and stack have the same letters it is a palindrome.
+
+The input of the program:
+1) the input is from the keyboard
+2) the input is the string of letters. If the string includes any other characters besides letters 
+these characters are ignored. If the string includes lower case letters these letters changes to 
+upper case by means of the function "toupper()"
+   
+The output of the program:
+1) The program outputs the phrase "it is a palindrome" or
+"it is not a palindrome". The output depends on the comparison of the letters between stack and queue
+
+The program has the following algorithms: 
+1) compares each character from the string. If character is a space or punctuation then it is ignored. 
+If the character is a letter and has lower space it is changed into upper case
+
+Program design
+1) The program includes Abstract Data Types. The objects of classes StackType and QeueType are 
+Abstract Data Types. 
+2) The objects Stack and Queue save the array of letters as type string. Then the objects can manipulate the
+letters by means of predefined methods.  
+3) The class StackType and QeueType are template classes and can work with different data types; 
+they dynamically allocate array   
+4) The class StackType and QeueType have constructor, destructor, copy constructor, 
+overloading the assignment operator and various methods
+The user can specify the size of the array in constructor. The constructor creates the array of 100 elements by default  
+The destructor dellocates the memory occupied by the array. 
+The copy constructor is called when a stack or queue object is passed as a value parameter to a function. 
+the assignment operator is explicitly overloaded because of pointer data members
+5) The function assert() checks the stack and queue. If they are empty the program terminates. 
+
+The program has the following files:
+
+File			function	 	description
+Main.cpp 		main()			main function	
+myStack.h		Declaration and 	Declare and implement the template class Stack 
+			implementation
+queueAsArray.h	Declaration and 	Declare and implement the template class Qeueu 
+			implementation
+
+The test of the program.
+1) Different characters were entered from the keyboard. The program reads only upper case letters and save them in array.
+2) Low case letters were entered from the keyboard. The low case letters were changed into upper case letters and saved in the array.

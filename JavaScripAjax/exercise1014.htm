@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Exercise 10.12, Assignment 6</title>
+    <style type="text/css">
+    .title 
+    {
+	    color:#283f71;
+	    font-weight:bold;
+	    text-align:center;
+	    font-size: 14pt;
+    }
+     .commontext
+    {
+	    font-size: 13pt;
+	    font-family:Arial, Helvetica, sans-serif;   
+    }
+    
+    </style>
+    
+  <SCRIPT type=text/javascript>
+         
+         function rollDice()
+         {
+            var firstDie, secondDie;
+          
+            var arr = new Array(11);
+            for(var i=0; i<arr.length; i++)
+            {
+                arr[i]=0;
+            }
+            
+            
+            for(var i=0; i<=36000; i++)
+            {
+                firstDie = Math.floor(1+Math.random()*6);
+                secondDie = Math.floor(1+Math.random()*6);
+                switch(firstDie+secondDie)
+                {
+                    case 2: arr[0]=arr[0]+1;
+                        break;
+                    case 3: arr[1]=arr[1]+1;
+                        break;
+                    case 4: arr[2]=arr[2]+1;
+                        break;
+                    case 5: arr[3]=arr[3]+1;
+                        break;
+                    case 6: arr[4]=arr[4]+1;
+                        break;
+                    case 7: arr[5]=arr[5]+1;
+                        break;
+                    case 8: arr[6]=arr[6]+1;
+                        break;
+                    case 9: arr[7]=arr[7]+1;
+                        break;
+                    case 10: arr[8]=arr[8]+1;
+                        break;
+                    case 11: arr[9]=arr[9]+1;
+                        break;
+                    case 12: arr[10]=arr[10]+1;
+                        break;
+                }
+            }
+            
+            document.getElementById('die2').innerHTML = arr[0];
+            document.getElementById('die3').innerHTML = arr[1];
+            document.getElementById('die4').innerHTML = arr[2]; 
+            document.getElementById('die5').innerHTML = arr[3];
+            document.getElementById('die6').innerHTML = arr[4];
+            document.getElementById('die7').innerHTML = arr[5];           
+            document.getElementById('die8').innerHTML = arr[6];
+            document.getElementById('die9').innerHTML = arr[7];            
+            document.getElementById('die10').innerHTML = arr[8];            
+            document.getElementById('die11').innerHTML = arr[9];
+            document.getElementById('die12').innerHTML = arr[10];          
+         }
+         
+      </SCRIPT>
+
+</head>
+<body onload="rollDice()">
+<form action="">
+<p class="title">Roll dice&nbsp;</p>  <br />
+    &nbsp; &nbsp;&nbsp;<br />
+<table border="1">
+<tr>
+<td>sum of dice
+</td>
+<td>frequency</td>
+</tr>
+<tr>
+<td>2
+</td>
+<td id="die2">
+</td>
+</tr>
+
+<tr>
+<td>3
+</td>
+<td id="die3">
+</td>
+</tr>
+
+<tr>
+<td>4
+</td>
+<td id="die4">
+</td>
+</tr>
+
+<tr>
+<td>5
+</td>
+<td id="die5">
+</td>
+</tr>
+
+<tr>
+<td>6
+</td>
+<td id="die6">
+</td>
+</tr>
+
+<tr>
+<td>7
+</td>
+<td id="die7">
+</td>
+</tr>
+
+<tr>
+<td>8
+</td>
+<td id="die8">
+</td>
+</tr>
+
+<tr>
+<td>9
+</td>
+<td id="die9">
+</td>
+</tr>
+
+<tr>
+<td>10
+</td>
+<td id="die10">
+</td>
+</tr>
+
+<tr>
+<td>11
+</td>
+<td id="die11">
+</td>
+</tr>
+
+<tr>
+<td>12
+</td>
+<td id="die12">
+</td>
+</tr>
+
+</table>
+
+
+
+
+<center><h2><a href=assignment6.htm>Go back to assignment 6</a></h2></center>
+</form>
+</body>
+</html>

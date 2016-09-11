@@ -1,0 +1,14 @@
+I:\C#programming\assignment4\Ex11_14\Ex11_14\bin\Debug\Ex11_14.exe
+I:\C#programming\assignment4\Ex11_14\Ex11_14\bin\Debug\Ex11_14.pdb
+I:\C#programming\assignment4\Ex11_14\Ex11_14\bin\Debug\Ex10_10.dll
+I:\C#programming\assignment4\Ex11_14\Ex11_14\obj\Debug\ResolveAssemblyReference.cache
+I:\C#programming\assignment4\Ex11_14\Ex11_14\obj\Debug\Ex11_14.exe
+I:\C#programming\assignment4\Ex11_14\Ex11_14\obj\Debug\Ex11_14.pdb
+D:\C#programming\assignment4\Ex11_14\Ex11_14\obj\Debug\Ex11_14.exe
+D:\C#programming\assignment4\Ex11_14\Ex11_14\obj\Debug\Ex11_14.pdb
+D:\C#programming\assignment4\Ex11_14\Ex11_14\bin\Debug\Ex11_14.exe
+D:\C#programming\assignment4\Ex11_14\Ex11_14\bin\Debug\Ex11_14.pdb
+D:\C#programming\assignment4\Ex11_14\Ex11_14\bin\Debug\Ex10_10.dll
+D:\C#programming\assignment4\Ex11_14\Ex11_14\obj\Debug\ResolveAssemblyReference.cache
+I:\C#programming\assignment4\A04\Ex11_14\Ex11_14\obj\Debug\Ex11_14.exe
+I:\C#programming\assignment4\A04\Ex11_14\Ex11_14\obj\Debug\Ex11_14.pdb

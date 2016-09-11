@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex10_10", "Ex10_10\Ex10_10.csproj", "{47FBB629-456B-4086-8B1D-B96118E0A6FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAccountHirarchy", "TestAccountHirarchy\TestAccountHirarchy.csproj", "{C5D040A6-998B-420F-89F8-5F831F04179A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47FBB629-456B-4086-8B1D-B96118E0A6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47FBB629-456B-4086-8B1D-B96118E0A6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47FBB629-456B-4086-8B1D-B96118E0A6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47FBB629-456B-4086-8B1D-B96118E0A6FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D040A6-998B-420F-89F8-5F831F04179A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D040A6-998B-420F-89F8-5F831F04179A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D040A6-998B-420F-89F8-5F831F04179A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D040A6-998B-420F-89F8-5F831F04179A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

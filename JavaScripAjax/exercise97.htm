@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Exercise 9.7, Assignment 5</title>
+    <style type="text/css">
+    .title {
+	    color:#283f71;
+	    font-weight:bold;
+	    text-align:center;
+	    font-size: 14pt;
+    }
+    
+    </style>
+    
+  <SCRIPT type=text/javascript>
+         <!--
+         function displayVolume()
+         {
+            var inputField = document.getElementById( "radiusField" );
+            var radius = parseFloat( inputField.value );
+            var answerField = document.getElementById( "answer" );
+            answerField.value = sphereVolume( radius );
+         } // end function displayVolume
+
+         function sphereVolume( radius )
+         {
+            return Math.PI * Math.pow( radius, 2 );
+         } // end function sphereVolume
+         // -->
+      </SCRIPT>
+
+</head>
+<body>
+<form action="">
+<p class="title">Calculation of the circle area</p>
+<DIV><LABEL>Radius: &nbsp;
+    <INPUT id=radiusField></LABEL> <INPUT onclick=displayVolume() type=button value=Calculate> <BR><LABEL>
+    <br />
+    Answer:&nbsp;
+<INPUT id=answer></LABEL> </DIV>
+<center><h2><a href=assignment5.htm>Go back to assignment 5</a></h2></center>
+</form>
+</body>
+</html>

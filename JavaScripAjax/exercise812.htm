@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Exercise 8.8, Assignment 4</title>
+    <style type="text/css"> 
+        table { width:50% }
+        th {text-align: center}
+    </style>
+    
+    <script type="text/javascript">
+    var productNum, quantity, days, i;
+    var arrSum = new Array();
+    
+    for(i=0; i<5; i++)
+    {
+        //productNum=parseInt(window.prompt("Enter the product number (1-5)"));
+        quantity=parseInt(window.prompt("Enter the quantity for product " + (i+1)));
+        switch(i)
+        {
+            case 0:
+               arrSum[0]=2.98*quantity; 
+            case 1:
+               arrSum[1]=4.5*quantity;
+            case 2:
+               arrSum[2]=9.98*quantity;
+            case 3:
+               arrSum[3]=4.49*quantity;
+            case 4:
+               arrSum[4]=6.87*quantity;
+        }
+    }
+   
+    days=parseInt(window.prompt("Enter the number of days to get result"));
+    
+    for(i=0; i<arrSum.length; i++)
+    {
+        arrSum[i]=arrSum[i]*days;
+        document.writeln("<strong><p> sells of product " + (i+1) + " = $" + arrSum[i].toFixed(2) + "</p></strong>");
+    }
+    
+      
+    </script>
+
+</head>
+<body>
+<center><h2><a href=assignment4.htm>Go back to assignment 4</a></h2></center>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+I:\C#programming\A09\Ex20_4\Ex20_4\bin\Debug\Ex20_4.exe.config
+I:\C#programming\A09\Ex20_4\Ex20_4\obj\Debug\Ex20_4.exe
+I:\C#programming\A09\Ex20_4\Ex20_4\obj\Debug\Ex20_4.pdb
+I:\C#programming\A09\Ex20_4\Ex20_4\bin\Debug\Books.mdb
+I:\C#programming\A09\Ex20_4\Ex20_4\bin\Debug\Ex20_4.exe
+I:\C#programming\A09\Ex20_4\Ex20_4\bin\Debug\Ex20_4.pdb
+I:\C#programming\A09\Ex20_4\Ex20_4\obj\Debug\ResolveAssemblyReference.cache
+I:\C#programming\A09\Ex20_4\Ex20_4\obj\Debug\Ex20_4.DisplayQueryResult.resources
+I:\C#programming\A09\Ex20_4\Ex20_4\obj\Debug\Ex20_4.Properties.Resources.resources
+I:\C#programming\A09\Ex20_4\Ex20_4\obj\Debug\Ex20_4.csproj.GenerateResource.Cache

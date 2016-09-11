@@ -1,0 +1,105 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+   <title>CSIS 352 Assignment #4</title>
+</head><body bgcolor="#ffffff">
+<b><font size="+1">CSIS 352 - Spring 2009</font></b>
+<br><b><font size="+1">Assignment #4 - 25 points</font></b>
+<br><b><font size="+1">Due <s>Tuesday, March 3</s> Thu, Mar. 5</font></b>
+<p>Create a C++ program that calculates and reports payroll for
+a company.  The name of the input file 
+is taken from the command line (prog4 infile) so you must use
+argc and argv.  See args.tar.gz if you need help on this. Output is to two
+files, <b><i>payroll</i></b> and <b><i>employees</i></b>.</p>
+<h4>Restrictions</h4>
+<ul>
+<li>You must use the following classes and organize them accordingly with
+    inheritance and composition according to Is-A and Has-A relationships:
+    <ul>
+    <li>Person 
+    </li><li>Employee Is-A Person
+    </li><li>HourlyEmployee Is-A Employee
+    </li><li>SalaryEmployee Is-A Employee
+    </li><li>Employees Has-A set of Employees (maybe you want to 
+        try your Array class)
+    </li></ul>
+</li><li>Minimum information stored for each employee (you can store more 
+    if you wish):
+    <ul>
+    <li>name (assume a maximum of 25 characters for output formatting purposes)
+    </li><li>birthday (your Date class)
+    </li><li>Social Security number
+    </li><li>employee ID number (5 digits)
+    </li><li>wage and hours worked (for an hourly employee)
+    </li><li>salary (for a salaried employee)
+    </li></ul>
+</li><li>Data should be in the appropriate class so that the classes are reusable.
+    For example, a person will always have a name but another application
+    may not use employee ID when using Person (in say an addressbook program).  
+    Therefore, employee ID should be in Employee, not Person, etc.
+</li><li>All data is read in and stored before any output is produced.
+</li><li>The data in the Employees class must be stored as Employee pointers.  
+    That way, each could point to either a SalaryEmployee or HourlyEmployee.
+</li><li>The Employee class contains at least one abstract method (does not have an
+    implementation) called displayPayroll(ostream&amp;) <i>(added after class -
+    I guess it doesn't have to be abstract, but you have to make it virtual)</i>
+</li><li>The SalaryEmployee and HourlyEmployee classes each contain a
+    displayPayroll(ostream&amp;) method containing the implementation for the 
+    abstract Employee displayPayroll(ostream&amp;) method.  
+    The result is polymorphic.  Calling
+    the displayPayroll(ostream&amp;) method of an Employee pointer will result in
+    dynamic (late) binding to the appropriate displayPayroll(ostream&amp;) method 
+    for either SalaryEmployee or HourlyEmployee.
+</li><li>Output to the <b>payroll</b> file will be properly labeled 
+    and neatly formatted in
+    tabular form with one employee per line.  Output consists of name,
+    employee ID, hours and wage for an HourlyEmployee, and gross pay 
+    (calculated for an HourlyEmployee with time and a half for hours &gt; 40,           and read in for a SalaryEmployee).
+    All columns must line up.  Hours and wage for a SalaryEmployee will
+    be blank.
+</li><li>Output to the <b>employees</b> file will be properly labeled 
+    and neatly formatted in
+    tabular form with one employee per line.  Output consists of name,
+    Social Security number, birthday, and age.
+    All columns must line up.  
+</li><li>Your main function will be in the file main.cpp and should consist 
+    only (mostly) of function calls
+</li><li>You must have a makefile that produces the executable prog4
+</li></ul>
+
+The following shows the required format of the input file giving an example
+of each employee type (the comments would not be in the input file).  You
+may assume a maximum of 100 employees, employee names will not exceed 25
+characters, and all employee IDs are 6 digits.  You may assume that
+the input file is in the proper format.
+<pre>John Smith     // employee name
+3/19/1948      // birthdate
+444-33-5555    // social security number
+12345          // employee ID
+H              // identifies hourly employee, will be uppercase
+50             // hours worked, time and a half for hours &gt; 40
+10.50          // pay per hour
+Jane Smith     // next employee name
+9/21/1953      // birthdate
+222-33-5555    // social security number
+32145          // employee ID
+S              // identifies salaried employee, will be uppercase
+2000           // salary
+</pre>
+
+<p><b>Follow these directions exactly!&nbsp; </b>Put all your work in a
+directory called ###a4 where ### is your 3 digit grade id. &nbsp; 
+When the program is executing correctly, remove
+all unnecessary files using make clean to prepare to hand it in 
+<b>(please do this so that the files you hand in are not
+so large, and please be careful not to delete anything needed)</b>.&nbsp;
+When your program is executing properly (do not hand in anything that
+doesn't work), tar and compress the directory using ###a4.tar.gz
+as the file name.  Electronically hand
+this file (<b><i>###a4.tar.gz</i></b>) to dragonfly.
+</p><p> Be sure to re-read this assignment
+description so you are doing <b><u>exactly</u></b> what is asked
+for.  I will drop in my own input files to test your program. Be sure
+to follow naming conventions specified.  The <b><i>README</i></b> file will 
+now take a significant effort.</p>
+</body></html>

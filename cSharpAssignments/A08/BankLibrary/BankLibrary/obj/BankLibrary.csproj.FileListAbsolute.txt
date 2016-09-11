@@ -1,0 +1,32 @@
+F:\CSIS336\Selected Solutions\Chapter 18\BankLibrary\BankLibrary\bin\Release\BankLibrary.pdb
+F:\CSIS336\Selected Solutions\Chapter 18\BankLibrary\BankLibrary\obj\Release\ResolveAssemblyReference.cache
+F:\CSIS336\Selected Solutions\Chapter 18\BankLibrary\BankLibrary\obj\Release\BankUIForm.resources
+F:\CSIS336\Selected Solutions\Chapter 18\BankLibrary\BankLibrary\obj\Release\BankLibrary.Properties.Resources.resources
+F:\CSIS336\Selected Solutions\Chapter 18\BankLibrary\BankLibrary\obj\Release\BankLibrary.csproj.GenerateResource.Cache
+F:\CSIS336\Selected Solutions\Chapter 18\BankLibrary\BankLibrary\obj\Release\BankLibrary.pdb
+F:\CSIS336\Selected Solutions\Chapter 18\BankLibrary\BankLibrary\bin\Release\BankLibrary.exe
+F:\CSIS336\Selected Solutions\Chapter 18\BankLibrary\BankLibrary\obj\Release\BankLibrary.exe
+F:\CSIS336\DataFilesforStudents\Chapter 18\BankLibrary\BankLibrary\obj\Release\BankLibrary.exe
+F:\CSIS336\DataFilesforStudents\Chapter 18\BankLibrary\BankLibrary\obj\Release\BankLibrary.pdb
+F:\CSIS336\DataFilesforStudents\Chapter 18\BankLibrary\BankLibrary\bin\Release\BankLibrary.exe
+F:\CSIS336\DataFilesforStudents\Chapter 18\BankLibrary\BankLibrary\bin\Release\BankLibrary.pdb
+F:\CSIS336\DataFilesforStudents\Chapter 18\BankLibrary\BankLibrary\obj\Release\ResolveAssemblyReference.cache
+F:\CSIS336\DataFilesforStudents\Chapter 18\BankLibrary\BankLibrary\obj\Release\BankUIForm.resources
+F:\CSIS336\DataFilesforStudents\Chapter 18\BankLibrary\BankLibrary\obj\Release\BankLibrary.Properties.Resources.resources
+F:\CSIS336\DataFilesforStudents\Chapter 18\BankLibrary\BankLibrary\obj\Release\BankLibrary.csproj.GenerateResource.Cache
+F:\CSIS336\Class Work\BankLibrary\BankLibrary\obj\Release\BankLibrary.pdb
+F:\CSIS336\Class Work\BankLibrary\BankLibrary\bin\Release\BankLibrary.dll
+F:\CSIS336\Class Work\BankLibrary\BankLibrary\bin\Release\BankLibrary.pdb
+F:\CSIS336\Class Work\BankLibrary\BankLibrary\obj\Release\ResolveAssemblyReference.cache
+F:\CSIS336\Class Work\BankLibrary\BankLibrary\obj\Release\BankUIForm.resources
+F:\CSIS336\Class Work\BankLibrary\BankLibrary\obj\Release\BankLibrary.Properties.Resources.resources
+F:\CSIS336\Class Work\BankLibrary\BankLibrary\obj\Release\BankLibrary.csproj.GenerateResource.Cache
+F:\CSIS336\Class Work\BankLibrary\BankLibrary\obj\Release\BankLibrary.dll
+D:\C#programming\Chapter 18first\BankLibrary\BankLibrary\bin\Release\BankLibrary.dll
+D:\C#programming\Chapter 18first\BankLibrary\BankLibrary\bin\Release\BankLibrary.pdb
+D:\C#programming\Chapter 18first\BankLibrary\BankLibrary\obj\Release\ResolveAssemblyReference.cache
+D:\C#programming\Chapter 18first\BankLibrary\BankLibrary\obj\Release\BankUIForm.resources
+D:\C#programming\Chapter 18first\BankLibrary\BankLibrary\obj\Release\BankLibrary.Properties.Resources.resources
+D:\C#programming\Chapter 18first\BankLibrary\BankLibrary\obj\Release\BankLibrary.csproj.GenerateResource.Cache
+D:\C#programming\Chapter 18first\BankLibrary\BankLibrary\obj\Release\BankLibrary.dll
+D:\C#programming\Chapter 18first\BankLibrary\BankLibrary\obj\Release\BankLibrary.pdb

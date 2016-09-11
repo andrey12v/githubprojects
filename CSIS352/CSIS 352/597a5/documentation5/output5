@@ -1,0 +1,56 @@
+Name: Student Secretary
+SSN: 777-77-7777
+Classification: Secretary Class 3
+Department: CSIS
+Hire Date: 1/9/2007
+Max Hours: 20
+Hours: 15     Wage: 6.50     Gross: 97.50
+Assigned Duties
+   answer phone
+   greet office visitors
+   typing
+   photocopying
+   make signage for department
+Supervisor: Super Secretary
+-----------------------------------------------
+Name: Good Secretary
+SSN: 888-88-8888
+Classification: Secretary Class 2
+Department: Chemistry
+Hire Date: 8/25/1999
+Hours: 40     Wage: 12.00     Gross: 480.00
+Benefits:
+   Health: 50.00   Dental: 20.00   Life: 0.00
+Assigned Duties
+   answer phone
+   greet office visitors
+   typing
+   photocopying
+   hire student office help
+   supervise student help
+   submit student payroll
+   liason with Dean's office
+Supervisor: Good Boss
+-----------------------------------------------
+Name: Super Secretary
+SSN: 999-99-9999
+Classification: Secretary Class 1
+Department: CSIS
+Hire Date: 8/28/1990
+Salary: 700.00
+Benefits:
+   Health: 50.00   Dental: 20.00   Life: 8.00
+Assigned Duties
+   answer phone
+   greet office visitors
+   typing
+   photocopying
+   hire student office help
+   supervise student help
+   submit student payroll
+   assist with department budget planning
+   assist with department scheduling
+   monitor lab and contact IT with problems
+   assist department LAN administrator
+Supervisor: Super Boss
+-----------------------------------------------

@@ -1,0 +1,26 @@
+Name:    Andrey Vasilyev
+Class:   CSIS 352
+Program: Assignment 3
+Date:    02/16/09
+
+Description of the program.
+Program is designed to work with arrays of different types such as integer numbers, characters or even other class data types. Moreover by means of the program it is possible to use the array with indexes of different types that are integer numbers, single characters and even days of week. The program also allows changing the size of declared array, assigning the values of one array to others and making comparison between the arrays. The program also has the functionality to process the errors and in case of incorrect user input the program outputs friendly messages.   
+
+Input of the program
+The program is not intended to input data from keyboard of file.
+
+Output of the program 
+1) The program outputs the results of array manipulations on the console screen. The program outputs the data returned from the methods of class Array
+2) Error messages are displayed on the screen in case of incorrect input parameters entered in the methods or assigned to objects of the class Array
+
+Program design
+The program has main header file “array.h” that includes specification and implementation. The Array is a template class that allows creating objects of different types. The program has different overloading operators that provide effective manipulations with arrays. Overloading of subscript operators offers to work with indexes of different types and numbers. The copy constructor is implemented to copy dynamic arrays to functions and other objects of the same class.  
+ 
+A listing of the files in the distribution    
+Main.cpp 		main()			main function	
+array.h		Declaration and 	Declare and implement the class Array 
+Date.h			Declaration and 	Declare and implement the class Date
+
+
+Test of the program
+The program was tested in different ways. The first part of the testing was performed with character arrays and character indexes. Then the array was declared as type of class date and all methods were tested based on this type. As a result of such testing it was possible to check performance of exception handlers and correctness of overloading operators. After this the next detailed testing was performed with arrays and indexes of different types. The last stage of testing helped to eliminate malicious mistakes. 

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Exercise 6.18, Assignment 3</title>
+    <script type="text/javascript">
+    var number1;
+    var number2;
+    var number3;
+    var sum, avg, product, smallest, largest;
+    
+    number1=parseInt(window.prompt("Enter first integer"));
+    number2=parseInt(window.prompt("Enter second integer"));
+    number3=parseInt(window.prompt("Enter second integer"));
+    
+    sum=number1+number2+number3;
+    product=number1*number2*number3;
+    avg=(number1+number2+number3)/3
+    
+    //the smallest and largest element
+    if(number1<=number2)
+    {
+        smallest=number1;
+        largest=number2;
+    }
+    else
+    {
+        smallest=number2;
+        largest=number1;
+    }
+    if(smallest>number3)
+    {
+        smallest=number3
+    }
+    if(largest<number3)
+    {
+        largest=number3
+    }
+        
+    window.alert(" sum = " + sum + 
+    "\n average= " + avg + 
+    "\n product= " + product + 
+    "\n smallest= " + smallest +
+    "\n largest= " + largest);
+    
+    </script>
+
+</head>
+<body>
+<center><h2><a href=assignment3.htm>Go back to assignment 3</a></h2></center>
+</body>
+</html>

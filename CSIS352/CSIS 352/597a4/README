@@ -1,0 +1,65 @@
+// Andrey Vasilyev
+// CSIS 352
+// README
+// 03/01/2009
+// Assignment 4
+
+Description of the program   
+The program reads employees’ information from the file people and stores all information 
+the array of pointers declared as Hourly Employee and Salary Employee. That’s way the 
+program can detect different type of employees in the file people and save them appropriately. 
+Then the program outputs private information about employees, their name, social security 
+number, birthday and age to the file employees. The information about employees’ payroll is 
+saved in the file payroll. 
+
+Input of the program
+The program reads the following employee’s information from the file people: 
+name, birthday, social security number, employee ID. If the employee is paid by hours the 
+program reads hours and wage. Otherwise, if the employee gets salary the program simply 
+reads salary.   
+
+Output of the program 
+1) The program outputs employees’ private information, their name, social security number, 
+birthday and age to the file employees
+2) The program outputs employees’ payroll information to the file payroll. The payroll information 
+includes the following: employee’s name, ID number, gross pay. If the employee is paid by hours the 
+program outputs hours and wage. Otherwise, if the employee gets salary the program outputs salary 
+to the file
+ 
+Program design
+The program is designed on the bases of multiple inheritance and polymorphism. All classes of the 
+program are inherited from the base class Person. The inheritance is used to separate the information 
+about people. For example, common person might not have employee ID but each employee could have 
+ID number, SSN. Moreover, all employees might be paid by hours or get regular salary. That’s way they are 
+divided by Hourly and Salary employees. Moreover the program has separate class Employees that allocates 
+the array of type Employee. The array is designated to keep pointers of classes Hourly Employee and Salary 
+Employee. The class Employees also has virtual abstract method displayPayroll() that is implemented in 
+corresponding classes Hourly Employee and Salary Employee. The method is called by the object of class 
+Employees and outputs either Hourly Employee or Salary Employee to the file payroll on the bases of 
+polymorphism main principles.  
+
+A listing of the files in the distribution 
+File			function			description
+main.cpp 		main				main function
+getemployees.cpp	getEmployeesFromFile()	function is used by main function
+writeemployees.cpp	writeEmployeesToFile()	function is used by main function
+array.h			array				array class specification
+array.cpp		array	methods		array class implementation	
+date.h			date				date class specification
+date.cpp		date methods			date class implementation
+person.h		person				person class specification
+person.cpp		person methods		person class implementation
+employee.h		employee			employee class specification
+employee.cpp		employee methods		employee class implementation
+employees.h		employees			employees class specification
+employees.cpp	employees methods		employees class implementation
+hourlyemployee.h	hourlyemployee		hourlyemployee class specification
+hourlyemployee.cpp   hourlyemployee methods      hourlyemployee class implementation
+salaryemployee.h	salaryemployee		salaryemployee class specification
+salaryemployee.cpp   salaryemployee methods       salaryemployee class implementation
+
+Test of the program
+The program was tested to read and write appropriate information about employees from one file and 
+to another one. Different types of employees (Salary and Hourly employees) were saved in the file 
+people and the program were able to read the file, detect Salary and Hourly Employees and output 
+appropriate information in the files payroll, employees. 

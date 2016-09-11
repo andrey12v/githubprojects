@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Exercise 8.8, Assignment 4</title>
+    <style type="text/css"> 
+        table { width:50% }
+        th {text-align: center}
+    </style>
+    
+    <script type="text/javascript">
+    var amount, i;
+    var arrRate = new Array(0.05, 0.06, 0.07, 0.08, 0.09, 0.1);
+    
+    principle=parseFloat(window.prompt("Enter the amount money to invest"));
+    
+    for(i=0; i<arrRate.length; i++)
+    {
+        document.writeln("<br />");
+        document.writeln("<table border=\"1\">");
+        document.writeln("<caption>Calculating Compound Interest for rate = " + arrRate[i] + "</caption>");
+        document.writeln("<thead><tr><th>Year</th><th>Amount on deposit</th></tr></thead><tbody>");
+        for(var year=1; year<=10; ++year)
+        {
+          amount=principle*Math.pow(1.0 + arrRate[i], year);
+          document.writeln("<tr><td>" + year + "</td><td>" + amount.toFixed(2) + "</td></tr>");
+        }
+                
+        document.writeln("</tbody></table>");
+        
+    }
+  
+  
+    </script>
+
+</head>
+<body>
+<center><h2><a href=assignment4.htm>Go back to assignment 4</a></h2></center>
+
+</body>
+</html>

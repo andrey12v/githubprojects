@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Exercise 7.16, Assignment 4</title>
+    <style type="text/css"> 
+    .title {
+	color:#283f71;
+	font-weight:bold;
+	text-align:center;
+	font-size: 14pt;
+    }
+    .data
+    {
+        text-align:center;
+	    font-size: 12pt;
+    }
+    
+    </style>
+    
+    <script type="text/javascript">
+    
+    var i;
+    
+    document.writeln("<table border=\"1\" width=\"40%\">");
+    document.writeln("<tr class=\"title\"><td>N</td>" + 
+    "<td>10*N</td><td>100*N</td><td>1000*N</td></tr>");
+    for(i=0; i<5; i++)
+    {
+       document.writeln("<tr class=\"data\"><td>" + (i+1) + "</td><td>" + (10*(i+1)) + "</td>" +
+       "<td>" + (100*(i+1)) + "</td><td>" + (1000*(i+1)) + "</td></tr>");
+    }
+    document.writeln("</table>");
+    </script>
+
+</head>
+<body>
+<center><h2><a href=assignment4.htm>Go back to assignment 4</a></h2></center>
+
+</body>
+</html>

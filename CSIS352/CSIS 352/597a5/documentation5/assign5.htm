@@ -1,0 +1,117 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+   <title>CSIS 352 Assignment #5</title>
+   <style type="text/css">
+      a  { text-decoration: none;
+           color: blue;
+           font-weight: bold }
+      a:hover  { background-color: blue;
+                 color: white }
+   </style>
+</head><body bgcolor="#ffffff">
+<b><font size="+1">CSIS 352 - Spring 2009</font></b>
+<br><b><font size="+1">Assignment #5 - 25 points</font></b>
+<br><b><font size="+1">Due Thursday, March 26</font></b>
+<p>
+This program builds upon the classes you created for assignment 4.
+The purpose of this program is additional (and extensive) use of inheritance,
+multiple inheritance, composition, polymorphism, static class members, 
+and the STL.  Another purpose of this assignment is for you to have fun.
+Follow the below inheritance hierarchy.
+<br>
+<br>
+<img src="assign5_files/inherit.jpg">
+
+</p><ul>
+<li><b>Person</b> - Has-A name (string) and Has-A birthday (Date)
+</li><li><b>Employee</b> - Is-A Person, Has-A Social Security Number (string),
+    and Has-A employee ID number
+    Has-A date of employment (Date), Has-A department (string) assigned
+    to, and Has-A supervisor (string)
+</li><li><b>SalaryEmployee</b> - Is-A Employee, Has-A salary (double)
+</li><li><b>HourlyEmployee</b> - Is-A Employee, Has-A number of hours 
+    worked (int) and Has-A wage (double)
+</li><li><b>FullTimeEmployee</b> - Is-A Employee and Has-A benefits package 
+    (make a Benefits class)
+</li><li><b>PartTimeEmployee</b> - Is-A Employee, Has-A ... Has-A ... I don't
+    know... Has-A whatever you want. How about a maximum number of hours they
+    can work?
+</li><li><b>Secretary</b> - Is-A Employee and Has-A set of basic duties (STL list)
+</li><li><b>SecretaryClass3</b> - Is-A Secretary, Is-A PartTimeEmployee, 
+    Is-A HourlyEmployee, Has-A set of class 3 duties (STL list)
+    and Has-A set of additional specific duties (STL list) for the person.
+</li><li><b>SecretaryClass2</b> - Is-A Secretary, Is-A FullTimeEmployee, 
+    Is-A HourlyEmployee, Has-A set of class 2 duties (STL list)
+    and Has-A set of additional specific duties (STL list) for the person.
+</li><li><b>SecretaryClass1</b> - Is-A Secretary, Is-A FullTimeEmployee, 
+    Is-A SalaryEmployee, Has-A set of class 1 duties (STL list)
+    and Has-A set of additional specific duties (STL list) for the person.
+</li></ul>
+
+<p><u><b>Restrictions</b></u>
+</p><ul>
+<li>The above inheritance hierarchy is to be followed.
+</li><li>The set of duties for the Secretary is to be static.  There should
+    be a static STL list of strings for the duties.  In addition, there
+    should be a static method to add a duty and a static method 
+    to print all the duties.
+</li><li>The SecretaryClass3 has additional duties besides those of the 
+    Secretary class.  These should be static as described above.
+</li><li>The SecretaryClass2 has additional duties besides those of the 
+    Secretary class and also has the same static duties of the SecretaryClass3
+    class.  Since the output method of the SecretaryClass3 duties is static,
+    the SecretaryClass2 simply needs to call SecretaryClass3::printduties( ) 
+    (or whatever you call the method) to output these duties.
+</li><li>The SecretaryClass1 has additional duties besides those of the Secretary
+    class and also has the same static duties of the SecretaryClass3 and
+    SecretaryClass2 and can be output in the same method described above.
+</li><li>Each class of secretary (SecretaryClass1 2 and 3) also has an additional 
+    STL list (not static) that are specific duties for that particular 
+    secretary.
+</li><li>Each class of secretary also has a static string to store the
+    classification of the secretary (i.e. "Secretary Class 3" etc.)
+</li><li>Store the test data in an STL list of pointers to Employee.  Each pointer
+    therefore can point to an object of either of the 3 classes of
+    secretary.  There will be a polymorphic method that will display
+    the employee information.  Data from each class in the
+    inheritance hierarchy should be displayed.
+</li></ul>
+
+<p><u><b>Comments</b></u></p>
+<ul>
+<li>static data members must also be in the implementation.  For example,
+    in the private data in the .h file:
+    <pre>    <b>static list&lt;string&gt; duties;</b>
+    </pre>
+    and in the .cpp: 
+    <pre>    <b>list&lt;string&gt; SecretaryClass1::duties;</b>
+    </pre>
+</li><li>Recall that if a method is static, it cannot also be const.
+</li><li>const methods that use an iterator require a const_iterator. For example:
+    <pre>    void SecretaryClass1::printSpecificDuties(ostream&amp; o) const
+    {
+       list&lt;string&gt;::const_iterator p = specificduties.begin();
+    </pre>
+
+</li><li>The purpose of this program is to set up the given inheritance hierarchy,
+    use static class members, use polymorphism, use composition,
+    and use the STL.  Therefore,
+    you are not required to produce any specific output from specific input.
+    Instead, you only need to test your overall structure.  As an example,
+    click <a href="http://dragon.mnstate.edu/%7Ebrekke/spring09/352/assignments/main5.cpp">HERE</a> to see my main function and
+    click <a href="http://dragon.mnstate.edu/%7Ebrekke/spring09/352/assignments/output5">HERE</a> to see my output.  Note that the output
+    includes information from each class in the inheritance hierarchy.
+
+</li><li>As a start to helping you understand the hierarchy, click
+    <a href="http://dragon.mnstate.edu/%7Ebrekke/spring09/352/assignments/SecretaryClass1.h">HERE</a> for one of my secretary class
+    definitions.
+
+</li><li>Be sure to follow the directions in the
+    <a href="http://dragon.mnstate.edu/%7Ebrekke/spring09/352/handouts/documentation.htm">Program Requirements</a>
+    handout,  including proper documentation and the README file.
+    Electronically hand your file (<b><i>###a5.tar.gz</i></b>) in to dragonfly.
+</li><li>Be sure to re-read this assignment
+    description so you are doing <b><u>exactly</u></b> what is asked
+    for.<p></p>
+</li></ul></body></html>

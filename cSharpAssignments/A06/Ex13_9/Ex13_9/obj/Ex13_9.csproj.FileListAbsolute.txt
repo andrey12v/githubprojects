@@ -1,0 +1,16 @@
+I:\C#programming\A06\Ex13_9\Ex13_9\bin\Debug\Ex13_9.exe
+I:\C#programming\A06\Ex13_9\Ex13_9\bin\Debug\Ex13_9.pdb
+I:\C#programming\A06\Ex13_9\Ex13_9\obj\Debug\ResolveAssemblyReference.cache
+I:\C#programming\A06\Ex13_9\Ex13_9\obj\Debug\Ex13_9.FuzzyDice.resources
+I:\C#programming\A06\Ex13_9\Ex13_9\obj\Debug\Ex13_9.Properties.Resources.resources
+I:\C#programming\A06\Ex13_9\Ex13_9\obj\Debug\Ex13_9.csproj.GenerateResource.Cache
+I:\C#programming\A06\Ex13_9\Ex13_9\obj\Debug\Ex13_9.exe
+I:\C#programming\A06\Ex13_9\Ex13_9\obj\Debug\Ex13_9.pdb
+D:\C#programming\A06\Ex13_9\Ex13_9\obj\Debug\Ex13_9.exe
+D:\C#programming\A06\Ex13_9\Ex13_9\bin\Debug\Ex13_9.exe
+D:\C#programming\A06\Ex13_9\Ex13_9\bin\Debug\Ex13_9.pdb
+D:\C#programming\A06\Ex13_9\Ex13_9\obj\Debug\ResolveAssemblyReference.cache
+D:\C#programming\A06\Ex13_9\Ex13_9\obj\Debug\Ex13_9.FuzzyDice.resources
+D:\C#programming\A06\Ex13_9\Ex13_9\obj\Debug\Ex13_9.Properties.Resources.resources
+D:\C#programming\A06\Ex13_9\Ex13_9\obj\Debug\Ex13_9.csproj.GenerateResource.Cache
+D:\C#programming\A06\Ex13_9\Ex13_9\obj\Debug\Ex13_9.pdb

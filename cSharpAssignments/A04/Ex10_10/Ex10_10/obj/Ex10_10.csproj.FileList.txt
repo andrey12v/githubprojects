@@ -1,0 +1,5 @@
+bin\Debug\Ex10_10.dll
+bin\Debug\Ex10_10.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Ex10_10.dll
+obj\Debug\Ex10_10.pdb

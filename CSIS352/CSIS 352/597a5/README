@@ -1,0 +1,81 @@
+// Andrey Vasilyev
+// CSIS 352
+// README
+// 03/14/2009
+// Assignment 5
+
+Description of the program 
+The program declares secretaries of different classification. Then it assigns 
+appropriate values to secretaries according to their classification. For example, 
+hourly, part time secretary is assigned wage, number of work hours in comparison 
+with full time secretary who gets salary. When the values are assigned add basic and 
+specific duties for each secretary based on his/her classification. Then the program 
+outputs all information about secretaries according to principles of polymorphism and 
+virtual inheritance.  
+
+Input of the program
+The input is not intended in this program.
+
+Output of the program 
+The program outputs the list of secretaries and their information according to 
+classification. 
+The program outputs the following information about secretaries
+1) Secretary’s private information that includes the same fields for all secretary 
+classifications: Name, birthday Social Security Number, School Department, 
+Supervisor and date when a secretary was hired. 
+2) Secretary’s type of payment and related payment information. The program 
+outputs wage, number of work hours, and maximum hours for the secretary class 
+that is declared as a part time, hourly employee. Wage, Work hours and benefits are 
+displayed for the secretary who has classification as a full time, hourly employee. 
+Salary and benefits are output for the secretary with classification as a full time, 
+salary employee. 
+3) Secretary’s basic and specific duties. The program outputs basic duties for each 
+secretary and specific duties that are assigned only to specific secretary. 
+
+Design of the program
+The program is designed on the bases of multiple inheritance, polymorphism. The 
+classes of the program are inherited from the base classes Person and Employee. 
+Other employee classes are also inherited from the class employee and become the 
+bases for secretary classes. As a result of such multiple inheritance the secretary 
+classes get required methods and properties according to classification. 
+The multiple inheritance of the program is designed on the bases of diamond derivation 
+that could create problems to call required methods without virtual inheritance. 
+The virtual inheritance solves the problem of diamond derivation.  
+Moreover, the program uses static methods in secretary classes that allow using them 
+with allocation of objects. 
+The program has abstract method Report declared in the class Employee and implemented in 
+inherited secretary classes. The method report outputs information about different 
+secretaries on the bases of polymorphism. The pointers to secretary classes are 
+created and added to the list of type employee. Then iterator goes through the list of 
+secretaries and the method Report outputs appropriate information about secretaries.  
+The most important is that program uses the lists and their methods from Standard 
+Template Library which makes it easier to develop the program. 
+
+A listing of the files in the distribution 
+File				function				description
+main.cpp 			main					main function
+date.h				date					date class specification
+date.cpp			date methods			date class implementation
+person.h			person					person class specification
+person.cpp			person methods			person class implementation
+employee.h			employee				employee class specification
+employee.cpp		employee methods		employee class implementation
+hourlyemployee.h	hourlyemployee			hourlyemployee class specification
+hourlyemployee.cpp  hourlyemployee methods  hourlyemployee class implementation
+salaryemployee.h	salaryemployee			salaryemployee class specification
+salaryemployee.cpp   salaryemployee methods salaryemployee class implementation
+parttimeemployee.h	parttimeemployee		parttimeemployee class specification
+fulltimeemployee.cpp fulltimeemployee methods  fulltimeemployee class implementation
+secretary.h			secretary				secretary class specification
+secretary.cpp		secretary methods		secretary class implementation
+secretaryclass1.h	secretaryclass1			secretaryclass1 class specification
+secretaryclass1.cpp	secretaryclass1 methods	secretaryclass1 class implementation
+secretaryclass2.h	secretaryclass2			secretaryclass2 class specification
+secretaryclass2.cpp	secretaryclass2 methods	secretaryclass2 class implementation
+secretaryclass3.h	secretaryclass3			secretaryclass3 class specification
+secretaryclass3.cpp	secretaryclass3 methods	secretaryclass3 class implementation
+
+Test of the program
+The methods of base class secretary and inherited classes secretary class 1, secretary 
+class 2, secretary class 3 were tested. Exception of the class Date also was tested if 
+the wrong date is entered the programs outputs the message about the error.  

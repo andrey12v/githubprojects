@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Examples from chapter 11</title>
+    <style type="text/css">
+    .title 
+    {
+	    color:#283f71;
+	    font-weight:bold;
+	    text-align:center;
+	    font-size: 14pt;
+    }
+     .commontext
+    {
+	    font-size: 13pt;
+	    font-family:Arial, Helvetica, sans-serif;   
+    }
+    
+    </style>
+    
+  <SCRIPT type=text/javascript>
+         
+         function loadExamples()
+         {
+            var current = new Date();
+            var s2 = "AbCdEfG";
+            document.writeln("<center><strong><p>Chapter 11 'JavaScript: Objects'&nbsp;</p></strong></center>");
+            document.writeln("<center><strong>Test of the character processing methods</strong></center><br/>" +
+              "<p>'" + String.fromCharCode(87, 79, 82, 68) + "' contains characters codes 87, 79, 82 and 68</p>");
+            document.writeln("<p>Test of the lowercase and upercase methods.</p>");
+            document.writeln("<p>'" + s2 + "' in lowercase is '" + s2.toLowerCase() + "'</p>");
+            document.writeln("<p>'" + s2 + "' in lowercase is '" + s2.toUpperCase() + "'</p>");
+            document.writeln("<center><strong>Test of date object</strong></center><br/>");
+            
+            document.writeln( 
+            "<h3>String representations and valueOf</h3>" );
+            document.writeln( "toString: " + current.toString() + 
+            "<br />toLocaleString: " + current.toLocaleString() +
+            "<br />toUTCString: " + current.toUTCString() + 
+            "<br />valueOf: " + current.valueOf() );
+            
+            document.writeln("<center><h2><a href=assignment7.htm>Go back to assignment 7</a></h2></center>");
+         }
+         
+      </SCRIPT>
+
+</head>
+<body onload="loadExamples()">
+<form action="">
+
+
+
+</form>
+</body>
+</html>

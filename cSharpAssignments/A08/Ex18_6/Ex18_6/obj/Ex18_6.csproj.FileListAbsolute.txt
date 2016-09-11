@@ -1,0 +1,17 @@
+C:\Documents and Settings\br161\Desktop\A08\Ex18_6\Ex18_6\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\br161\Desktop\A08\Ex18_6\Ex18_6\obj\Debug\Ex18_6.Properties.Resources.resources
+C:\Documents and Settings\br161\Desktop\A08\Ex18_6\Ex18_6\obj\Debug\Ex18_6.ReadWriteFile.resources
+C:\Documents and Settings\br161\Desktop\A08\Ex18_6\Ex18_6\obj\Debug\Ex18_6.csproj.GenerateResource.Cache
+C:\Documents and Settings\br161\Desktop\A08\Ex18_6\Ex18_6\bin\Debug\Ex18_6.exe
+C:\Documents and Settings\br161\Desktop\A08\Ex18_6\Ex18_6\bin\Debug\Ex18_6.pdb
+C:\Documents and Settings\br161\Desktop\A08\Ex18_6\Ex18_6\obj\Debug\Ex18_6.exe
+C:\Documents and Settings\br161\Desktop\A08\Ex18_6\Ex18_6\obj\Debug\Ex18_6.pdb
+D:\C#programming\A08\Ex18_6\Ex18_6\obj\Debug\Ex18_6.exe
+D:\C#programming\A08\Ex18_6\Ex18_6\obj\Debug\Ex18_6.pdb
+D:\C#programming\A08\Ex18_6\Ex18_6\bin\Debug\Ex18_6.exe
+D:\C#programming\A08\Ex18_6\Ex18_6\bin\Debug\Ex18_6.pdb
+D:\C#programming\A08\Ex18_6\Ex18_6\bin\Debug\BankLibrary.dll
+D:\C#programming\A08\Ex18_6\Ex18_6\obj\Debug\ResolveAssemblyReference.cache
+D:\C#programming\A08\Ex18_6\Ex18_6\obj\Debug\Ex18_6.Properties.Resources.resources
+D:\C#programming\A08\Ex18_6\Ex18_6\obj\Debug\Ex18_6.ReadWriteFile.resources
+D:\C#programming\A08\Ex18_6\Ex18_6\obj\Debug\Ex18_6.csproj.GenerateResource.Cache

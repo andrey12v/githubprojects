@@ -1,0 +1,74 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+   <title>CSIS 352 Assignment #7</title>
+   <style type="text/css">
+      a  { text-decoration: none;
+           color: blue;
+           font-weight: bold }
+      a:hover  { background-color: blue;
+                 color: white }
+   </style>
+</head><body bgcolor="#ffffff">
+<b><font size="+1">CSIS 352 - Spring 2009</font></b>
+<br><b><font size="+1">Assignment #7 - 30 points</font></b>
+<br><b><font size="+1">Due Thursday, May 7</font></b>
+
+<p>Write a C++ templated ADT for a graph.
+Allow for the graph to be WEIGHTED or
+UNWEIGHTED and either DIRECTED or UNDIRECTED, declared in
+either order. The default
+is UNWEIGHTED and UNDIRECTED.  These should be an
+enum type so the following declarations are valid syntax.
+</p><ul>
+<pre><li>Graph&lt;City&gt; map(DIRECTED,WEIGHTED);
+</li><li>Graph&lt;City&gt; map(WEIGHTED,DIRECTED); // same as previous
+</li><li>Graph&lt;Something&gt; graph(DIRECTED); // DIRECTED and UNWEIGHTED
+</li><li>Graph&lt;Sometype&gt; graph(WEIGHTED); // UNDIRECTED and WEIGHTED
+</li><li>Graph&lt;Anothertype&gt; graph; // UNDIRECTED and UNWEIGHTED
+</li><li>etc.
+</li></pre>
+</ul>
+
+<p>The Graph class must include the following methods
+</p><ul>
+<pre><li>constructors
+</li><li>void destroy(); // delete all edges and vertices
+</li><li>bool isEmpty() const;
+</li><li>int edgeCount() const;
+</li><li>int vertexCount() const;
+</li><li>void insertVertex(Vertex); 
+</li><li>void insertEdge(fromVertex,toVertex, int weight=1);
+</li><li>void deleteEdge(fromVertex,toVertex);
+</li><li>void deleteVertex(Vertex); // be sure to delete associated edges
+</li><li>void dump() const;  // for debugging purposes, simply dumps out graph contents
+</li><li>destructor, copy constructor, operator= (if necessary)
+</li></pre>
+</ul>
+
+<p>Restrictions</p>
+<ul>
+<li>The class must be templated and called Graph and be in the file graph.h.
+</li><li>You can assume a maximum of 100 vertices.  Bonus points: make your graph
+    class so that any number of vertices can be stored. How you did
+    it should be made clear at the top of your README file and demonstrated
+    in your program including output from your program describing it.
+</li><li>The main.cpp program that you turn in must be a representation of this
+<a href="http://dragon.mnstate.edu/%7Ebrekke/spring09/352/assignments/graph.xls">graph</a> (the same one that I handed out and discussed).
+Use the dump() method to dump out the graph after it has been created.
+</li><li>Be aware that I will drop my own examples of main.cpp into your
+    directory for graphs of different types so be sure to test your Graph
+    class thoroughly.  Be careful that your Graph class does not depend on
+    stuff in other files. <b>RE-READ THE PREVIOUS SENTENCE.</b>
+</li><li>You may assume a precondition for the Graph class is that the relational 
+    operators are defined for the templated type.
+</li></ul>
+<p>Be sure to follow the directions in the
+<a href="http://dragon.mnstate.edu/%7Ebrekke/spring09/352/handouts/documentation.htm">Program Requirements</a>
+handout, including proper documentation and the README file.  Your
+README file should have a good description of your design.
+</p><p>Be sure to re-read this assignment
+description so you are doing <b><u>exactly</u></b> what is asked
+for.</p>
+
+</body></html>

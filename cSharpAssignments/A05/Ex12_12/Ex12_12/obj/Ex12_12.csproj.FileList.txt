@@ -1,0 +1,2 @@
+obj\Debug\Ex12_12.exe
+obj\Debug\Ex12_12.pdb

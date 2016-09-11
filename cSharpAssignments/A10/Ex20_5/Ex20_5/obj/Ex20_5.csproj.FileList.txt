@@ -1,0 +1,3 @@
+bin\Debug\Ex20_5.exe.config
+obj\Debug\Ex20_5.exe
+obj\Debug\Ex20_5.pdb

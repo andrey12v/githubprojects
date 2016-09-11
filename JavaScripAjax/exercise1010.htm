@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Exercise 10.10, Assignment 6</title>
+    <style type="text/css">
+    .title 
+    {
+	    color:#283f71;
+	    font-weight:bold;
+	    text-align:center;
+	    font-size: 14pt;
+    }
+     .commontext
+    {
+	    font-size: 13pt;
+	    font-family:Arial, Helvetica, sans-serif;   
+    }
+    
+    </style>
+    
+  <SCRIPT type=text/javascript>
+         var arr = new Array(9);       
+         
+         function setArray()
+         {
+            for(var i=0; i<9; i++)
+            {
+                arr[i]=0;
+            }  
+         }
+         
+         
+         function getSalary()
+         {
+            var gross=parseInt(document.getElementById("txtSales").value);
+            var salary=gross*0.09+200;
+            
+            if ((salary>=200) && (salary<=299))
+            {
+                arr[0]=arr[0] + 1;
+                displaySalary();
+            }
+            else if ((salary>=300) && (salary<=399))
+            {
+                arr[1]=arr[1] + 1;
+                displaySalary();
+            }
+            else if ((salary>=400) && (salary<=499))
+            {
+                arr[2]=arr[2] + 1;
+                displaySalary();
+            }
+            else if ((salary>=500) && (salary<=599))
+            {
+                arr[3]=arr[3] + 1;
+                displaySalary();
+            }
+            else if ((salary>=600) && (salary<=699))
+            {
+                arr[4]=arr[4] + 1;
+                displaySalary();
+            }
+            else if ((salary>=700) && (salary<=799))
+            {
+                arr[5]=arr[5] + 1;
+                displaySalary();
+            }
+            else if ((salary>=800) && (salary<=899))
+            {
+                arr[6]=arr[6] + 1;
+                displaySalary();
+            }
+            else if ((salary>=900) && (salary<=999))
+            {
+                arr[7]=arr[7] + 1;
+                displaySalary();
+            }
+            else if (salary>=1000)
+            {
+                arr[8]=arr[8] + 1;
+                displaySalary();
+            }
+           
+         }
+        
+         function displaySalary()
+         {
+             var txtResult = document.getElementById("txtaResult")
+             txtResult.value = "$200-$299      " + arr[0] + "\n" + 
+                   "$300-$399      " + arr[1] + "\n" +
+                   "$400-$499      " + arr[2] + "\n" + 
+                   "$500-$599      " + arr[3] + "\n" +
+                   "$600-$699      " + arr[4] + "\n" +
+                   "$700-$799      " + arr[5] + "\n" +
+                   "$800-$899      " + arr[6] + "\n" +
+                   "$900-$999      " + arr[7] + "\n" +
+                   "$1000 and over " + arr[8] + "\n";
+         }         
+         
+         function clearFields()
+         {
+            document.getElementById("txtaResult").value="";
+            document.getElementById("txtSales").value="";
+            setArray();
+         }
+             
+      </SCRIPT>
+
+</head>
+<body onload="setArray()">
+<form action="">
+<p class="title">Calculation of salespeople's salaries&nbsp;</p>  
+    Enter sales amount:<br />
+    <input id="txtSales" style="width: 116px" type="text"/>&nbsp; &nbsp;
+    <input id="btnSubmit" type="button" value="Submit" onclick="getSalary()"/>&nbsp;
+    <input id="btnClear" type="button" value="Clear" onclick="clearFields()"/><br />
+    <br />
+    <textarea id="txtaResult" style="width: 423px; height: 240px"></textarea>
+    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+
+<center><h2><a href=assignment6.htm>Go back to assignment 6</a></h2></center>
+</form>
+</body>
+</html>

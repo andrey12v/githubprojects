@@ -1,0 +1,85 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+   <title>CSIS 352 Assignment #2</title>
+   <style type="text/css">
+      a  { text-decoration: none;
+           color: blue;
+           font-weight: bold }
+      a:hover  { background-color: blue;
+                 color: white }
+   </style>
+</head><body bgcolor="#ffffff">
+<b><font size="+1">CSIS 352 - Spring 2009</font></b>
+<br><b><font size="+1">Assignment #2 - 20 points</font></b>
+<br><b><font size="+1">Due Thursday, February 5</font></b>
+<p>Using the <b><i>Date</i></b> class you created in program 1, 
+   do the following.
+</p><ul>
+<li>Fix any errors that you had in program 1.
+</li><li>Put the Date class in a namespace called <b><i>DateNameSpace</i></b>.
+</li><li>Create an exception class called <b><i>DateException</i></b>
+    that will identify any errors.  The class must include a method 
+    called <b><i>what( )</i></b> that will return a string indicating the 
+    error that occurred.  The <b><i>DateException</i></b> class must be
+    in the <b><i>DateNameSpace</i></b> namespace.
+</li><li>Since exceptions will no longer allow an invalid state for the 
+    <b><i>Date</i></b> class, fix the constructor.  If no arguments are 
+    given, the Date object is initialized to the current date. <b>In addition,
+    make the setMonth, setDay, and setYear private and add a public method
+    called setDate(int month, int day, int year);</b>
+</li><li>
+</li><li>Be sure to update the documentation in <b><i>date.h</i></b> and any
+    other place.
+</li></ul>
+
+Next, create a <b><i>Time</i></b> class.  Include the follwining methods
+<ul>
+<li>constructor(s) allowing the following declarations.
+    <ul>
+    <li>Time t1; // initialized to the current time
+    </li><li>Time t2(13); // time set to 1:00PM
+    </li><li>Time t3(15,30); // time set to 3:30PM
+    </li><li>Time t4(9,10,20); // time set to 9:10AM and 20 seconds
+    </li></ul>
+</li><li>getHour, setHour, getMinute, setMinute, getSecond, and setSecond
+</li><li><b>setTime(hour, minute, second);</b>
+</li><li>now() - sets the object to the current time
+</li><li>the 6 relational operator overloads
+</li><li>static void outputFormat(TimeFormat); // sets the output format
+    <ul>
+    <li>a static <b><i>TimeFormat</i></b> member stores the format
+    </li><li><b><i>TimeFormat</i></b> is an enum that includes
+        <ul>
+        <li>CIVILIAN - 3:30PM (this is the default)
+        </li><li>MILITARY - 15:30
+        </li><li>DETAILED - 15:30:00 
+        </li></ul>
+    </li></ul>
+</li><li>ostream insertion operator &lt;&lt; that outputs the <i><b>Time</b></i>
+    object according to the 
+    <b><i>TimeFormat</i></b>
+</li><li>The <b><i>Time</i></b> class is to be in a namespace called
+    <b><i>TimeNameSpace</i></b> and there is to be an exception class called
+    <b><i>TimeException</i></b> that will identify errors.
+    The class must include a method 
+    called <b><i>what( )</i></b> that will return a string indicating the 
+    error that occurred.  The <b><i>TimeException</i></b> class must be
+    in the <b><i>TimeNameSpace</i></b> namespace.
+</li></ul>
+
+<p>You will create a test program that sufficiently tests the classes
+(only new features of the <b><i>Date</i></b> class need testing).
+Your program will be contained in 
+<i><b>main.cpp</b></i> and the makefile will
+produce the executable image <b><i>prog2</i></b>.
+
+</p><p><b>Be sure to follow the directions on the Program Requirements 
+handout exactly!</b>
+Electronically hand
+this file (<b><i>###a2.tar.gz</i></b>) to dragonfly.
+</p><p> Be sure to re-read this assignment
+description so you are doing <b><u>exactly</u></b> what is asked
+for.  I will drop in my own test program and makefile to grade
+your class so the naming restrictions must be followed exactly.</p>
+</body></html>

@@ -1,0 +1,21 @@
+#include "token.h"
+#include "myStack.h"
+
+char returnTokenAfterDegree(stackType<Token> inpStack){
+
+	Token tmpToken1;
+	inpStack.pop();
+	if(!inpStack.isEmptyStack()){
+		tmpToken1=inpStack.top();
+	}
+	else if(inpStack.isEmptyStack()){
+		return 'n';
+	}
+
+	if(!inpStack.isEmptyStack() && !tmpToken1.IsLeftParen()){
+		return tmpToken1.Operator();
+	}
+	else if(!inpStack.isEmptyStack() && tmpToken1.IsLeftParen()){
+		return '(';
+	}
+}

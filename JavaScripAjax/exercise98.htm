@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Exercise 9.7, Assignment 5</title>
+    <style type="text/css">
+    .title {
+	    color:#283f71;
+	    font-weight:bold;
+	    text-align:center;
+	    font-size: 14pt;
+        }
+    .commontext
+    {
+	    font-size: 13pt;
+	    font-family:Arial, Helvetica, sans-serif;   
+    }
+    
+    </style>
+    
+  <SCRIPT type=text/javascript>
+         
+         function getNewCustomer()
+         {
+            document.getElementById("txtHours").value="";
+            document.getElementById("txtCharge").value="";
+            document.getElementById("txtReceipts").value="";
+         }
+         
+         function calculateCharge()
+         {
+            var hours=parseInt(document.getElementById("txtHours").value);
+            if(hours<=3)
+            {
+                document.getElementById("txtCharge").value="$2";
+                document.getElementById("txtReceipts").value="$2"
+            }
+            else if(hours>=19)
+            {
+                document.getElementById("txtCharge").value="$2.5";
+                document.getElementById("txtReceipts").value="$10"
+            }
+            else if((hours>3) && (hours<19))
+            {
+                var tmp=(hours-3)*0.5+2;
+                document.getElementById("txtCharge").value="$2.5";
+                document.getElementById("txtReceipts").value="$" + tmp;
+            }
+         }
+        
+      </SCRIPT>
+
+</head>
+<body>
+<form action="">
+<p class="title">The calculation of garage charges</p>
+<table class="commontext">
+<tr>
+<td > 
+    Hours</td>
+<td>
+    &nbsp;
+    <input id="txtHours" type="text" /> &nbsp;</td>
+</tr>
+<tr>
+<td>Customer Charge
+</td>
+<td>
+    &nbsp;
+    <input id="txtCharge" type="text"  readonly="readonly"/>
+</td>
+</tr>
+<tr>
+<td>Total Receipts
+</td>
+<td>
+    &nbsp;
+    <input id="txtReceipts" type="text" readonly="readonly"/>
+</td>
+</tr>
+
+<tr>
+<td><INPUT onclick=getNewCustomer() type=button value="New Customer" id="btnNewCustomer">
+</td>
+<td><INPUT onclick=calculateCharge() type=button value="Calculate Charge" id="btnCalculateCharge">
+</td>
+</tr>
+</table>
+
+<center><h2><a href=assignment5.htm>Go back to assignment 5</a></h2></center>
+</form>
+</body>
+</html>

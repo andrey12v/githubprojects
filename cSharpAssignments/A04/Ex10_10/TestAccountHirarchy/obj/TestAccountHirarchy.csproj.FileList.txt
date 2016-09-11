@@ -1,0 +1,7 @@
+obj\Debug\TestAccountHirarchy.exe
+obj\Debug\TestAccountHirarchy.pdb
+bin\Debug\TestAccountHirarchy.exe
+bin\Debug\TestAccountHirarchy.pdb
+bin\Debug\Ex10_10.dll
+bin\Debug\Ex10_10.pdb
+obj\Debug\ResolveAssemblyReference.cache

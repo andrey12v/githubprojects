@@ -1,0 +1,8 @@
+D:\C#programming\A05\Ex12_10\Ex12_10\obj\Debug\Ex12_10.exe
+D:\C#programming\A05\Ex12_10\Ex12_10\obj\Debug\Ex12_10.pdb
+D:\C#programming\A05\Ex12_10\Ex12_10\bin\Debug\Ex12_10.exe
+D:\C#programming\A05\Ex12_10\Ex12_10\bin\Debug\Ex12_10.pdb
+D:\C#programming\A05\Ex12_10\Ex12_10\obj\Debug\ResolveAssemblyReference.cache
+D:\C#programming\A05\Ex12_10\Ex12_10\obj\Debug\Ex12_10.Form1.resources
+D:\C#programming\A05\Ex12_10\Ex12_10\obj\Debug\Ex12_10.Properties.Resources.resources
+D:\C#programming\A05\Ex12_10\Ex12_10\obj\Debug\Ex12_10.csproj.GenerateResource.Cache

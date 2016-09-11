@@ -1,0 +1,54 @@
+// Andrey Vasilyev
+// CSIS 352
+// README
+// 04/19/2009
+// Assignment 6
+
+The main purpose of the program is to demonstrate the efficiency of hash 
+table usage, how it could be fast and convenient to insert and retrieve 
+elements of the hash table. The program allocates dynamic hash table that 
+could keep elements with the same index as linked lists. As a result of 
+this the hash table could be increased dynamically by any number of 
+elements in appropriate indexes of the array. Moreover, the probability to 
+loose elements is decreased significantly due to design of the hash table 
+as a linked chain.   
+
+Input of the program
+The input is not intended in this program.
+
+Output of the program
+The program outputs the employees’ name and social security numbers 
+that were inserted in the hash table.   
+The program also demonstrates special cases:
+1. If two elements have different SSN that is used as a key value, 
+different Name but the same hash value the elements are inserted in 
+the hash table anyway.
+2. If two elements have the same SSN, Name and hash value one of 
+the elements is inserted and another one is discarded.  
+
+Design of the program
+The program uses the list from Standard Template Library. 
+The program also has declaration and implementation of dynamic hash 
+table that is based of the functionality of STL list. The hash table 
+allows insert elements with the same index but different key value in 
+the array. Moreover the hash table is template and could keep 
+elements of any data type. The program has separate class Employee that 
+is used to demonstrate the functionality of the hash table. 
+The Employee class also has implementation of hash function that 
+generates indexes of elements to be inserted in the array based of 
+employee’s social security number.  
+
+A listing of the files in the distribution 
+file				function				description
+main.cpp 			main					main function
+employee.h			employee				employee class specification
+employee.cpp		employee methods		employee class implementation
+dynamichashtable.h	dynamichashtable		dynamichashtable class 
+											specification and implementation
+
+Test of the program
+All methods of dynamic hash table were tested. For example, employees with 
+different SSN and name were inserted in the hash table. Moreover, the special 
+case when employees have different SSN but the same hash value was also 
+tested and all such type of employees were inserted in the hash table 
+successfully. 

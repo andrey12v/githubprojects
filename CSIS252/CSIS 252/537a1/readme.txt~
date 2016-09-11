@@ -1,0 +1,17 @@
+Name:      Andrey Vasilyev
+Class:     CSIS 252
+Program:   assignment 1
+Date:      09/10/07
+
+The program carries out the following operations:
+1) opens the file “data” to read integer numbers from this file. Then this numbers is stored in an integer array.  
+2) sorts the integer array on decrease
+3) creates the file “output” to store the content of the integer array.
+4) finds the sum of integer elements of the array.
+5) finds the average sum. The sum is divided on the quantity of elements of the integer array.
+
+The program has the following input: 
+The input from the file “data” which is an integers ciphers. These ciphers are stored in an integer array.
+The fist output is the file “output”. The integer array is stored in the file “output”.  The second output is the screen where average sum of the integer array is appeared. 
+
+  

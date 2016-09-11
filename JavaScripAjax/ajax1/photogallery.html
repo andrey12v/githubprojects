@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Photo gallery - Ajax</title>
+
+<SCRIPT language=JavaScript type=text/javascript>
+      
+      var asyncRequest; // variable to hold XMLHttpRequest object
+      var asyncRequest2; // variable to hold XMLHttpRequest object
+
+      function getContent( url )
+      {
+         try
+         {
+            asyncRequest = new XMLHttpRequest(); // create request object
+            asyncRequest.onreadystatechange = stateChange; 
+            asyncRequest.open( 'GET', url, true ); // prepare the request
+            asyncRequest.send( null ); // send the request
+         } 
+         catch ( exception )
+         {
+            alert( 'Request failed.' );
+         } 
+      } 
+      
+      function stateChange()
+      {
+         if ( asyncRequest.readyState == 4 && asyncRequest.status == 200 )
+         {
+            document.getElementById( 'contentArea' ).innerHTML = 
+               asyncRequest.responseText; 
+         } 
+      } 
+    
+      
+   </SCRIPT>
+
+</head>
+<body>
+
+<p style="font-size: 18px; text-align: justify; padding: 10px;">This photo gallery uploads images in the zoom mode by means of Ajax requests. When you click on a thumbnail of any image it sends Ajax requests to another web page hosted on a web server. Th web server returns a separate web page with the zoom image and then the initial web page, where you clicked the thumbnail image, displays the web page retuned from the web server in the space below.<br/> 
+You can download this ajax exercise from <a href="ajaxExercise1.zip" target="_blank"><b>THIS LINK</b></a> and take a look at it how it works.<br /> 
+If you click on a thumbnail of any image, the image will be displayed in the zoom mode below. 
+</p>
+<table >
+  <tr>
+    <td><img src="gallery/frontthumb1.jpg" 
+    onclick = 'getContent( "main1.htm" )' style="padding: 10px;"/></td>
+    <td><img src="gallery/frontthumb2.jpg" 
+    onclick = 'getContent( "main2.htm" )' style="padding: 10px;"/></td>
+	<td><img src="gallery/frontthumb3.jpg" 
+    onclick = 'getContent( "main3.htm" )' style="padding: 10px;"/></td>
+	<td><img src="gallery/frontthumb4.jpg" 
+    onclick = 'getContent( "main4.htm" )' style="padding: 10px;"/></td>
+	</tr>
+</table>
+<div id=contentArea align=center />
+
+</body>
+</html>

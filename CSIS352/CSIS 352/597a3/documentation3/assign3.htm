@@ -1,0 +1,108 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+   <title>CSIS 352 Assignment #3</title>
+   <style type="text/css">
+      a  { text-decoration: none;
+           color: blue;
+           font-weight: bold }
+      a:hover  { background-color: blue;
+                 color: white }
+   </style>
+</head><body bgcolor="#ffffff">
+<b><font size="+1">CSIS 352 - Spring 2009</font></b>
+<br><b><font size="+1">Assignment #3 - 25 points</font></b>
+<br><b><font size="+1">Due Tuesday, February 17</font></b> 
+                     
+<p>Create a class called <b>Array</b> that functions as an enhanced array.
+Following are the properties of <b>Array</b>.
+</p><ul>
+<li>It will not allow an index outside of the array boundary. An 
+    <b>ArrayException</b> will be thrown if it does.  
+    The <b>ArrayException</b> has a <b>what()</b> method.
+    Indexing is accomplished by overloading the [] operator.  See
+    <a href="http://dragon.mnstate.edu/%7Ebrekke/spring09/352/assignments/overload.cpp"><b>THIS</b></a> for help.  
+</li><li><b>Array</b> is templated to allow any type. Remember, templated code
+    must be compiled into the code that uses it.
+</li><li>It allows the user to specify the range of indices as either int, char, 
+    or an enum type.
+    Examples of array declarations (throw an exception if the last index
+    is less than the first):
+    <ul>
+    <pre>    Array&lt;int&gt; array1;           // default size 100, indices 0 to 99
+    Array&lt;char&gt; array2(-3,2);     //size of 6, indices -3 -2 -1 0 1 2
+    Array&lt;double&gt; array3('C','G');  // size of 5, indices 'C' 'D' 'E' 'F' 'G'
+
+    enum DaysOfWeek {Mon, Tue, Wed, Thu, Fri, Sat, Sun};
+    Array&lt;Date&gt; array4(Wed,Sat);  // size of 4, indices Wed Thu Fri Sat
+    </pre>
+    </ul>
+</li><li>Pass by value arguments to functions will create a copy of the <b>Array</b>.
+</li><li>Functions can return an <b>Array</b>.
+</li><li>Assignment is allowed with an exact copy being made:
+    <ul>
+    <pre>    array1=array2;  // array1 will also get the starting index of array2
+    </pre>
+    </ul>
+</li><li>A Resize method changes the <b>Array</b> size. Throw an exception 
+    if the argument is &lt;= 0, truncate if the new size is less than 
+    the original. The starting index remains the same.
+    <ul>
+    <pre>    array1.Resize(20);
+    </pre>
+    </ul>
+</li><li>A Size method returns the size of the array
+    <ul>
+    <pre>    cout &lt;&lt; array1.Size();
+    </pre>
+    </ul>
+</li><li><b>Array</b> and <b>ArrayException</b> will be in the 
+        <b>ArrayNameSpace</b> namespace.
+</li><li>Overload the 6 relational operators for the <b>Array</b> class.
+    For simplicity, you can ignore index type and starting index
+    (all arrays <i>really</i> start with index 0 anyway).
+    For two arrays to be equal, they must be exactly equal in size and
+    content.  For comparing less and greater, arrays can be of different
+    sizes.  For <b>Array</b> A to be less than <b>Array</b> B (A &lt; B), 
+    start at
+    the beginning of each array and return the result as soon as the
+    <i>i<sup>th</sup></i> element differs (be sure to not run off the end
+    of one of the arrays).  The other 4 relational operators
+    can be built using == and &lt; with the <i>this</i> pointer.  Note:
+    <b>Arrays</b> must be of the same type to be compared (for example
+    both int) or the compiler will flag an error (this is to be
+    expected).
+</li></ul>
+<b>Additional Notes</b>
+<ul>
+<li>Use const methods and const arguments where appropriate.
+</li><li>Your main.cpp file should contain sufficient testing.  Significant
+    points will be deducted for lack of testing.
+</li><li>I will also drop in a program for testing.  Just to make sure your
+    naming is correct, click <a href="http://dragon.mnstate.edu/%7Ebrekke/spring09/352/assignments/main3.cpp">HERE</a> for an
+    example test program that should compile with your classes.  This should
+    NOT be the only testing you do!  In fact, it doesn't test everything
+    you need to do.
+</li><li>Get your class to first work with int indices, then char, then enum
+    (do some thinking about enum, do you really need to do anything else?).  
+</li><li>The class definition must be in <b>array.h</b> and the implementation 
+    in <b>array.cpp</b> or at the bottom of <b>array.h</b><p></p>
+</li></ul>
+
+<p><b>Be sure to follow the directions on the Program Requirements 
+handout exactly!</b>
+Electronically hand
+this file (<b><i>###a3.tar.gz</i></b>) to dragonfly.
+</p><p> Be sure to re-read this assignment
+description so you are doing <b><u>exactly</u></b> what is asked
+for.  I will drop in my own test program (that includes <b>array.h</b>)
+and makefile to grade
+your class so the naming restrictions must be followed exactly.</p>
+<h4>Test Programs</h4>
+<ul>
+<li><a href="http://dragon.mnstate.edu/%7Ebrekke/spring09/352/assignments/main3a.cpp">test program 1</a>
+</li><li><a href="http://dragon.mnstate.edu/%7Ebrekke/spring09/352/assignments/main3b.cpp">test program 2</a>
+</li><li><a href="http://dragon.mnstate.edu/%7Ebrekke/spring09/352/assignments/main3c.cpp">test program 3</a>
+</li></ul>
+
+</body></html>

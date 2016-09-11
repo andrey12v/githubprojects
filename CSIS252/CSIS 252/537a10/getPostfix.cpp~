@@ -1,0 +1,295 @@
+// File:      getPostfix.cpp
+// Name:      Andrey Vasilyev
+// Class:     CSIS 252
+// Program:   assignment 10
+// Date:      11/17/07
+
+// This file contains getPostfix function.
+// The function converts Infix to Postfix expression
+// The function uses stack and queue as parametrs passed by reference from the main fumction
+// The function also uses logical variable checkLeftParen to make two algorithms separate. 
+// If checkLeftParen===false the function converts Infix to Postfix without parenthesis
+// If checkLeftParen===true the function converts Infix to Postfix with parenthesis
+// The main idea of the algoritim is the following. If the token is operand it is added in the queue
+// If the token is operator it is pushed in stack. 
+// The algorithim compares the precedence of opearotrs in the stack. 
+// If the input operator has lower precedence than the top operatop in the stack 
+// the top element of the stack is added in the queue and the input operator is pushed in the stack.
+// If the input operator has hihger precedence than the top operatop in the stack 
+// the top element is kept in the stack and input operator is pushed in the stack
+// If the input operator and the top element of the stack have equal precednece 
+// the top element of the stack is added in the queue and the input operator is pushed in the stack
+// There are also some exception which are degree and parenthisis. 
+// If the top element of the stack has equal precedence as degree,such as operator '*', '/' or '%' 
+// the top element is kept in the stack and degree is pushed in the stack.   
+// If input operator is lower than degree which is the top element of the stack 
+// the degree and all elemnts after the degree are added in the queue from stack and 
+// the input operator is pushed in the stack
+// In case of paranthesis the alorithm uses the same rule to compare the precedence of operators
+// but this algorithm works within parenthis. If the right parenthis is appeared the rest of the elements up to
+// left parenthis is added to the queue and deleted from the stack
+// The algorithm finishes to work when all elements of infix expression compare.
+// The function outputs the Infix expression on the screen and returns Postfix expression saved in the queue
+// The function uses the library "token.h" to work with operators and operands of the infix expression
+// The function uses the library "myStack.h" to work with stacks
+// The function uses the library "queueAsArray.h" to work with stacks
+
+#include "token.h"
+#include "myStack.h"
+#include "queueAsArray.h"
+#include <iostream>
+using namespace std;
+
+bool getEqualPrecedence(Token& inpT, stackType<Token>& inpStack);
+
+bool getHighPrecedence(Token& inpT, stackType<Token>& inpStack);
+
+char returnTokenAfterDegree(stackType<Token> inpStack);
+
+int getsizeOfStack(stackType<Token> inpStack);
+
+int getsizeBeforeLeftParen(stackType<Token> inpStack);
+
+void getPostfixEvaluation(stackType<Token>& inpStack);
+
+bool getLowPrecedence(Token& inpT, stackType<Token>& inpStack);
+
+void getPostfix(stackType<Token>& stack, queueType<Token>& queue, bool checkLeftParen)
+{
+
+
+Token t, tmpToken;
+Token outToken[100];
+
+int j=0;
+int i=0;
+cin>>t;
+outToken[0]=t;
+while (t.Valid())
+{
+outToken[j]=t;
+j++;	
+
+if (t.IsOperand()){
+		queue.addQueue(t);
+		}
+	else if(t.IsOperator() && checkLeftParen==false){
+		if(!stack.isEmptyStack()){
+			tmpToken=stack.top();			
+
+			if(getLowPrecedence(t, stack) && getsizeOfStack(stack)==1){
+				queue.addQueue(stack.top());
+				stack.pop();
+				stack.push(t);
+				goto out;
+			}
+			else if(getHighPrecedence(t, stack)){
+				stack.push(t);
+				goto out;	
+			}
+			else if(getEqualPrecedence(t, stack)){
+				queue.addQueue(stack.top());
+				stack.pop();
+				stack.push(t);
+				goto out;			
+			}
+			else if(getLowPrecedence(t, stack) && getsizeOfStack(stack)>=2){
+				queue.addQueue(stack.top());
+				stack.pop();
+				queue.addQueue(stack.top());
+				stack.pop();
+				stack.push(t);
+				goto out;		
+			}
+			else if(t.Operator()=='^'){
+				stack.push(t);
+				goto out;
+			}
+			else if(tmpToken.Operator()=='^' && (t.Operator()=='+' || t.Operator()=='-') ){
+				
+				while(!stack.isEmptyStack()){
+					queue.addQueue(stack.top());
+					stack.pop();
+				}
+				stack.push(t);	
+				goto out;
+			}
+			else if(tmpToken.Operator()=='^' && (t.Operator()=='*' || t.Operator()=='/' || t.Operator()=='%') &&
+			(returnTokenAfterDegree(stack)=='-' || returnTokenAfterDegree(stack)=='+' || 
+			returnTokenAfterDegree(stack)=='n') ){
+				queue.addQueue(stack.top());
+				stack.pop();
+				stack.push(t);
+				goto out;
+			}
+			else if(tmpToken.Operator()=='^' && (t.Operator()=='*' || t.Operator()=='/' || t.Operator()=='%') &&
+			(returnTokenAfterDegree(stack)=='*' || returnTokenAfterDegree(stack)=='/')){
+				
+				queue.addQueue(stack.top());
+				stack.pop();
+				queue.addQueue(stack.top());
+				stack.pop();
+				stack.push(t);
+				goto out;
+			
+			}
+			else if(tmpToken.Operator()=='^' && (t.Operator()=='*' || t.Operator()=='/' || t.Operator()=='%') &&
+			(returnTokenAfterDegree(stack)=='^')){
+
+				while(!stack.isEmptyStack()){
+					if(tmpToken.Operator()=='^'){
+						queue.addQueue(stack.top());
+						stack.pop();					
+						tmpToken=stack.top();
+					}else{break;}
+				}
+
+				if(tmpToken.Operator()=='*' || tmpToken.Operator()=='/' || tmpToken.Operator()=='%'){
+					queue.addQueue(stack.top());
+					stack.pop();
+				}
+				if(!stack.isEmptyStack()){
+					tmpToken=stack.top();
+				}
+				if(stack.isEmptyStack() || tmpToken.Operator()=='+' || tmpToken.Operator()=='-'){
+					stack.push(t);
+					goto out;
+				}	
+			}
+		};		
+		if(stack.isEmptyStack()){
+			stack.push(t);
+			goto out;
+		};
+	}
+	
+
+
+
+	else if(t.IsLeftParen() || (checkLeftParen==true && t.IsOperator()) ){
+		if(!stack.isEmptyStack()){
+			tmpToken=stack.top();
+		}
+		if(stack.isEmptyStack() || t.IsLeftParen()){
+			stack.push(t);
+			checkLeftParen=true;
+			goto out;
+		}
+		else if(tmpToken.IsLeftParen()){
+			stack.push(t);
+			goto out;
+		}
+		else if(getHighPrecedence(t, stack)){
+			stack.push(t);
+			goto out;	
+		}
+		else if(getEqualPrecedence(t, stack)){
+			queue.addQueue(stack.top());
+			stack.pop();
+			stack.push(t);
+			goto out;			
+		}
+		else if(getLowPrecedence(t, stack)){
+			if(getsizeBeforeLeftParen(stack)==1){
+				queue.addQueue(stack.top());
+				stack.pop();
+			}
+			else if(getsizeBeforeLeftParen(stack)==2){
+				queue.addQueue(stack.top());
+				stack.pop();
+				queue.addQueue(stack.top());
+				stack.pop();
+			}
+			stack.push(t);
+			goto out;
+		}
+		else if(t.Operator()=='^'){
+			stack.push(t);
+			goto out;
+		}
+		else if(tmpToken.Operator()=='^' && (t.Operator()=='+' || t.Operator()=='-') ){
+				
+			while(!tmpToken.IsLeftParen()){
+				tmpToken=stack.top();		
+				if(!tmpToken.IsLeftParen()){
+					queue.addQueue(stack.top());
+					stack.pop();
+				}
+			}
+
+			stack.push(t);	
+			goto out;
+		}
+		else if(tmpToken.Operator()=='^' && (t.Operator()=='*' || t.Operator()=='/' || t.Operator()=='%') &&
+		(returnTokenAfterDegree(stack)=='-' || returnTokenAfterDegree(stack)=='+' || 
+		returnTokenAfterDegree(stack)=='(') ){
+			queue.addQueue(stack.top());
+			stack.pop();
+			stack.push(t);
+			goto out;
+		}
+		else if(tmpToken.Operator()=='^' && (t.Operator()=='*' || t.Operator()=='/' || t.Operator()=='%') &&
+		(returnTokenAfterDegree(stack)=='*' || returnTokenAfterDegree(stack)=='/')){
+				
+			queue.addQueue(stack.top());
+			stack.pop();
+			queue.addQueue(stack.top());
+			stack.pop();
+			stack.push(t);
+			goto out;
+			
+		}
+		else if(tmpToken.Operator()=='^' && (t.Operator()=='*' || t.Operator()=='/' || t.Operator()=='%') &&
+		(returnTokenAfterDegree(stack)=='^')){
+
+			while(!tmpToken.IsLeftParen()){
+				if(tmpToken.Operator()=='^'){
+					queue.addQueue(stack.top());
+					stack.pop();					
+					tmpToken=stack.top();
+				}else{break;}
+			}
+
+			if(tmpToken.Operator()=='*' || tmpToken.Operator()=='/' || tmpToken.Operator()=='%'){
+				queue.addQueue(stack.top());
+				stack.pop();
+				tmpToken=stack.top();
+			}if(tmpToken.IsLeftParen() || tmpToken.Operator()=='+' || tmpToken.Operator()=='-'){
+				stack.push(t);
+				goto out;
+			}	
+		}
+	}
+	else if(t.IsRightParen()){
+		tmpToken=stack.top();
+	
+		while(!tmpToken.IsLeftParen()){
+			tmpToken=stack.top();		
+			if(!tmpToken.IsLeftParen()){
+				queue.addQueue(stack.top());
+				stack.pop();
+			}
+		}	
+
+		if(tmpToken.IsLeftParen()){
+			stack.pop();
+		}
+
+		checkLeftParen=false;
+	};
+
+out: cin >> t;
+}
+
+while(!stack.isEmptyStack()){
+queue.addQueue(stack.top());
+stack.pop();
+}
+cout<<"Infix ";
+for(i=0; i<j; i++){
+cout<<outToken[i]<<" ";
+};
+cout<<endl;
+
+
+};

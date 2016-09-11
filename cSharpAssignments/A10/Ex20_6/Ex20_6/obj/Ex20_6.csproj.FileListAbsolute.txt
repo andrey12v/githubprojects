@@ -1,0 +1,33 @@
+C:\Documents and Settings\br161\Desktop\Ex20_6\Ex20_6\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\br161\Desktop\Ex20_6\Ex20_6\obj\Debug\Ex20_6.Baseball.resources
+C:\Documents and Settings\br161\Desktop\Ex20_6\Ex20_6\obj\Debug\Ex20_6.Properties.Resources.resources
+C:\Documents and Settings\br161\Desktop\Ex20_6\Ex20_6\obj\Debug\Ex20_6.csproj.GenerateResource.Cache
+C:\Documents and Settings\br161\Desktop\Ex20_6\Ex20_6\bin\Debug\Baseball.mdf
+C:\Documents and Settings\br161\Desktop\Ex20_6\Ex20_6\bin\Debug\Baseball_log.ldf
+C:\Documents and Settings\br161\Desktop\Ex20_6\Ex20_6\bin\Debug\Ex20_6.exe.config
+C:\Documents and Settings\br161\Desktop\Ex20_6\Ex20_6\bin\Debug\Ex20_6.exe
+C:\Documents and Settings\br161\Desktop\Ex20_6\Ex20_6\bin\Debug\Ex20_6.pdb
+C:\Documents and Settings\br161\Desktop\Ex20_6\Ex20_6\obj\Debug\Ex20_6.exe
+C:\Documents and Settings\br161\Desktop\Ex20_6\Ex20_6\obj\Debug\Ex20_6.pdb
+I:\C#programming\A10\Ex20_6\Ex20_6\bin\Debug\Ex20_6.exe.config
+I:\C#programming\A10\Ex20_6\Ex20_6\obj\Debug\Ex20_6.exe
+I:\C#programming\A10\Ex20_6\Ex20_6\obj\Debug\Ex20_6.pdb
+I:\C#programming\A10\Ex20_6\Ex20_6\bin\Debug\Baseball.mdf
+I:\C#programming\A10\Ex20_6\Ex20_6\bin\Debug\Baseball_log.ldf
+I:\C#programming\A10\Ex20_6\Ex20_6\bin\Debug\Ex20_6.exe
+I:\C#programming\A10\Ex20_6\Ex20_6\bin\Debug\Ex20_6.pdb
+I:\C#programming\A10\Ex20_6\Ex20_6\obj\Debug\ResolveAssemblyReference.cache
+I:\C#programming\A10\Ex20_6\Ex20_6\obj\Debug\Ex20_6.Baseball.resources
+I:\C#programming\A10\Ex20_6\Ex20_6\obj\Debug\Ex20_6.Properties.Resources.resources
+I:\C#programming\A10\Ex20_6\Ex20_6\obj\Debug\Ex20_6.csproj.GenerateResource.Cache
+D:\C#programming\A10\Ex20_6\Ex20_6\bin\Debug\Ex20_6.exe.config
+D:\C#programming\A10\Ex20_6\Ex20_6\obj\Debug\Ex20_6.exe
+D:\C#programming\A10\Ex20_6\Ex20_6\obj\Debug\Ex20_6.pdb
+D:\C#programming\A10\Ex20_6\Ex20_6\bin\Debug\Baseball.mdf
+D:\C#programming\A10\Ex20_6\Ex20_6\bin\Debug\Baseball_log.ldf
+D:\C#programming\A10\Ex20_6\Ex20_6\bin\Debug\Ex20_6.exe
+D:\C#programming\A10\Ex20_6\Ex20_6\bin\Debug\Ex20_6.pdb
+D:\C#programming\A10\Ex20_6\Ex20_6\obj\Debug\ResolveAssemblyReference.cache
+D:\C#programming\A10\Ex20_6\Ex20_6\obj\Debug\Ex20_6.Baseball.resources
+D:\C#programming\A10\Ex20_6\Ex20_6\obj\Debug\Ex20_6.Properties.Resources.resources
+D:\C#programming\A10\Ex20_6\Ex20_6\obj\Debug\Ex20_6.csproj.GenerateResource.Cache

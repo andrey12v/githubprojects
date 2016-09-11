@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Exercise 9.31, Assignment 5</title>
+    <style type="text/css">
+    .title 
+    {
+	    color:#283f71;
+	    font-weight:bold;
+	    text-align:center;
+	    font-size: 14pt;
+    }
+     .commontext
+    {
+	    font-size: 13pt;
+	    font-family:Arial, Helvetica, sans-serif;   
+    }
+    
+    </style>
+    
+  <SCRIPT type=text/javascript>
+         
+         
+         var generatedNumber;
+         var counter;
+                           
+         function generateNumber()
+         {
+            generatedNumber=Math.floor(1+Math.random()*1000);
+            document.getElementById("txtHideNumber").value=generatedNumber;
+            counter=0;
+         }
+         
+         function Guess()
+         {
+            
+            var userNumber=parseInt(document.getElementById("txtNumber").value);
+            var textArea=document.getElementById("txtaResult");
+            
+            if(userNumber<generatedNumber)
+            {
+                textArea.value += userNumber + " is too low\n";
+                document.getElementById("txtNumber").value="";
+                counter=counter+1;
+            }
+            else if(userNumber>generatedNumber)
+            {
+                textArea.value += userNumber + " is too high\n";
+                document.getElementById("txtNumber").value="";
+                counter=counter+1;
+            }
+            else if(userNumber==generatedNumber)
+            {
+                textArea.value += userNumber + " is correct!!!\n";
+                document.getElementById("txtNumber").value="";
+                counter=counter+1;
+                               
+                if(counter<10)
+                {
+                    textArea.value +="it took you " + counter + " guesses!\n";
+                    textArea.value +="Either you know secret or you got lucky!\n";
+                }
+                else if(counter==10)
+                {
+                    textArea.value +="it took you " + counter + " guesses!\n";
+                    textArea.value +="Ahah! You know the secret!\n";
+                }
+                else if(counter>10)
+                {
+                    textArea.value +="it took you " + counter + " guesses!\n";
+                    textArea.value +="You should be able to do better!\n";
+                }
+                  
+            
+            } 
+         
+         }
+         
+         function playNewGame()
+         {
+            document.getElementById("txtaResult").value="";
+            generatedNumber=Math.floor(1+Math.random()*1000);
+            counter=0;
+            document.getElementById("txtHideNumber").value=generatedNumber;
+         }
+         
+                  
+             
+      </SCRIPT>
+
+</head>
+<body onload="generateNumber()">
+<form action="">
+<p class="title" id="txtAnswer">Guess a number&nbsp;
+</p>  
+    Guess a number between 1 and 1000:&nbsp;
+    <input id="txtNumber" style="width: 116px" type="text"/>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+    &nbsp;<br />
+    <br />
+    <input id="btnGuess" type="button" value="Guess" onclick="Guess()"/>&nbsp;
+    <input id="btnNewGame" type="button" value="Play new game" onclick="playNewGame()"/><br />
+    <br />
+    <textarea id="txtaResult" style="width: 423px; height: 240px"></textarea>
+    &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<br />
+    Answer (don't see on this number):
+    <input id="txtHideNumber" style="width: 73px" type="text" /><br />
+
+<center><h2><a href=assignment5.htm>Go back to assignment 5</a></h2></center>
+</form>
+</body>
+</html>

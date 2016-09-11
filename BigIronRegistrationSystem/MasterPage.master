@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="ascx_MasterPage"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<title>North Dakota Trade Office</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<form id="form1" runat="server" method="post">
+    <div>
+		<br />
+        <table width="853" border="0" align="center" cellpadding="0" cellspacing="0" class="mainContainer">
+            <tr>
+                <td width="4" class="borderTopLeft"><img src="images/1x1clear.gif" alt="  " width="4" height="4" /></td>
+                <td class="borderTop"><img src="images/1x1clear.gif" alt="  " width="1" height="1" /></td>
+                <td width="4" class="borderTopRight"><img src="images/1x1clear.gif" alt="  " width="4" height="4" /></td>
+            </tr>
+            <tr>
+                <td class="borderLeft"><img src="images/1x1clear.gif" alt=" " width="4" height="1" /></td>
+                <td width="845" class="centerCell">
+					
+					<table width="100%" border="0" cellpadding="0" cellspacing="0" class="head">
+						<tr>
+							<td width="296">
+								<asp:HyperLink ID="MainPageLink" runat="server" NavigateUrl="~/" BorderStyle="None">
+									<img src="images/logo.jpg" alt="NDTO" width="296" height="35" style="border:none;"/>
+								</asp:HyperLink>
+							</td>
+							<td align="right" valign="bottom" class="topNav">
+								<a href="" class="topNav">Home</a> &#9642;
+								<a href="" class="topNav">Contact Us</a> &#9642; 
+								<a href="" class="topNav">Membership/Service Offering</a> &#9642; 
+								<a href="" class="topNav">Job Seekers</a> &#9642; 
+								<a href="" class="topNav">News</a> &#9642; 
+								<a href="" class="topNav">Staff Login</a>
+							</td>
+						</tr>
+					</table>
+					<div class="topHR"><img src="images/1x1clear.gif" alt=" " /></div>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="616">
+								<asp:Literal ID="RandomImage" runat="server"></asp:Literal>
+							</td>
+							<td valign="top">
+								<div id="rightNav"> 
+									<a href="admingallery.aspx">Admin Gallery</a> 
+									<a href="photogallery.aspx">Public Gallery</a> 
+									<a href="adminbiregistration.aspx">Admin Big Iron Registration</a>
+									<a href="englregistration.aspx">English Big Iron Registration</a>  
+									<a href="rusregistration.aspx">Russian Big Iron Registration</a>
+								</div>
+							</td>
+						</tr>
+					</table>					
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td class="bottomContainerLeft" valign="top" style="padding:5px;">								
+								<asp:ContentPlaceHolder ID="MainPlaceholder" runat="server">
+								</asp:ContentPlaceHolder>																
+							</td>
+							
+						</tr>
+						
+					</table>
+																							
+				</td>
+				<td class="borderRight"><img src="images/1x1clear.gif" alt="  " width="4" height="1" /></td>
+			</tr>
+			<tr>
+				<td class="borderBottomLeft" style="height: 4px"><img src="images/1x1clear.gif" alt="  " width="4" height="4" /></td>
+				<td class="borderBottom" style="height: 4px"><img src="images/1x1clear.gif" alt="  " width="1" height="4" /></td>
+				<td class="borderBottomRight" style="height: 4px"><img src="images/1x1clear.gif" alt="  " width="4" height="4" /></td>
+			</tr>
+		</table>
+    </div>
+    </form>
+</body>
+</html>

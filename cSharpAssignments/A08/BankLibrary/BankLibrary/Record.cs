@@ -1,0 +1,100 @@
+// Fig. 18.8: Record.cs
+// Serializable class that represents a data record.
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+[Serializable]
+public class RecordSerrializable
+{
+   private int account;
+   private string firstName;
+   private string lastName;
+   private decimal balance;
+   private bool protection;
+
+   // parameterless constructor sets members to default values
+   public RecordSerrializable() : this( 0, "", "", 0.0M, false )
+   {
+   } // end constructor
+
+   // overloaded constructor sets members to parameter values
+    public RecordSerrializable(int accountValue, string firstNameValue,
+      string lastNameValue, decimal balanceValue, bool protectionValue )
+   {
+      Account = accountValue;
+      FirstName = firstNameValue;
+      LastName = lastNameValue;
+      Balance = balanceValue;
+      protection = protectionValue;
+   } // end constructor
+
+   // property that gets and sets Account
+   public int Account
+   {
+      get
+      {
+         return account;
+      } // end get
+      set
+      {
+         account = value;
+      } // end set
+   } // end property Account
+
+   // property that gets and sets FirstName
+   public string FirstName
+   {
+      get
+      {
+         return firstName;
+      } // end get
+      set
+      {
+         firstName = value;
+      } // end set
+   } // end property FirstName
+
+   // property that gets and sets LastName
+   public string LastName
+   {
+      get
+      {
+         return lastName;
+      } // end get
+      set
+      {
+         lastName = value;
+      } // end set
+   } // end property LastName
+
+   // property that gets and sets Balance
+   public decimal Balance
+   {
+      get
+      {
+         return balance;
+      } // end get
+      set
+      {
+         balance = value;
+      } // end set
+   } // end property Balance
+
+   public bool Protection
+   {
+       get
+       {
+           return protection;
+       } // end get
+       set
+       {
+           protection = value;
+       } // end set
+   } // end property Balance
+
+
+
+} // end class Record
+
+

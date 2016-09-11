@@ -1,0 +1,10 @@
+obj\Debug\Ex14_11.exe
+obj\Debug\Ex14_11.pdb
+bin\Debug\Ex14_11.exe
+bin\Debug\Ex14_11.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Ex14_11.ChildForm1.resources
+obj\Debug\Ex14_11.ChildForm2.resources
+obj\Debug\Ex14_11.ParentForm.resources
+obj\Debug\Ex14_11.Properties.Resources.resources
+obj\Debug\Ex14_11.csproj.GenerateResource.Cache

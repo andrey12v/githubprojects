@@ -1,0 +1,36 @@
+Name:    Andrey Vasilyev
+Class:   CSIS 252
+Program: Assignment 1
+Date:    09/10/07
+The program carries out the following operations:
+1) opens the file “data” to read integer numbers from this file. Then this numbers is stored in an integer array.  
+2) sorts the integer array on decrease
+3) creates the file “output” to store the content of the integer array.
+4) finds the sum of integer elements of the array.
+5) finds the average sum. The sum is divided on the quantity of elements of the integer array.
+
+The program has the following input: 
+The input from the file “data” which is an integers ciphers. These ciphers are stored in an integer array.
+The fist output is the file “output”. The integer array is stored in the file “output”.  The second output is the screen where average sum of the integer array is appeared.
+The program carries out the following operations:
+1) opens the file “data” to read integer numbers from this file. Then this numbers is stored in an integer array.  
+2) sorts the integer array on decrease
+3) creates the file “output” to store the content of the integer array.
+4) finds the sum of integer elements of the array.
+5) finds the average sum. The sum is divided on the quantity of elements of the integer array. 
+The program has the following input: 
+The input from the file “data” which is an integers ciphers. These ciphers are stored in an integer array.
+The fist output is the file “output”. The integer array is stored in the file “output”.  The second output is the screen where average sum of the integer array is appeared. 
+The program has the following algoritms: 
+1) Sorting – sort the elements on decrease. If the preceding element of the array is smaller than the following they exchange to each other. The sorting implements until all elements will become on decrease. 
+2) The average sum of the integer array. The program finds the sum of the integer array and then divides these elements on their quantity. 
+
+File		function 	description
+Main.cpp 	  main()	main function	
+Read.cpp	  read()	read integer data from the file	 
+Sort.cpp	  sort()	sort data in the integer array on decrease
+Write.cpp	  write()	create a file and write the elements of the integer array in the file	 
+Findsum.cpp	findsum	find sum of the elements of the integer array
+The program was tasted during input from the file
+1) It was used the big file. The file included more than 100 numbers. When program stored data from the file into array it worked slower. Therefore, the amount of data was limited by 100 numbers.
+2) The program was tasted on reading from the file. If the program cannot open the file it shows mistake “Error opening file”

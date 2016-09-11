@@ -1,0 +1,10 @@
+D:\C#programming\assignment4\Ex10_10\Ex10_10\bin\Debug\Ex10_10.dll
+D:\C#programming\assignment4\Ex10_10\Ex10_10\bin\Debug\Ex10_10.pdb
+D:\C#programming\assignment4\Ex10_10\Ex10_10\obj\Debug\ResolveAssemblyReference.cache
+D:\C#programming\assignment4\Ex10_10\Ex10_10\obj\Debug\Ex10_10.dll
+D:\C#programming\assignment4\Ex10_10\Ex10_10\obj\Debug\Ex10_10.pdb
+I:\C#programming\assignment4\Ex10_10\Ex10_10\bin\Debug\Ex10_10.dll
+I:\C#programming\assignment4\Ex10_10\Ex10_10\bin\Debug\Ex10_10.pdb
+I:\C#programming\assignment4\Ex10_10\Ex10_10\obj\Debug\ResolveAssemblyReference.cache
+I:\C#programming\assignment4\Ex10_10\Ex10_10\obj\Debug\Ex10_10.dll
+I:\C#programming\assignment4\Ex10_10\Ex10_10\obj\Debug\Ex10_10.pdb

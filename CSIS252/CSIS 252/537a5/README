@@ -1,0 +1,57 @@
+Name:    Andrey Vasilyev
+Class:   CSIS 252
+Program: Assignment 5
+Date:    09/10/07
+The program carries out the following operations:
+1) opens the file "peoplefile"ù to read people's name and the date of birthday
+2) stores people in the array of objects 
+3) calculates people's age and determines the day of week when he or she was born
+4) sorts the objects descendly according people's age 
+5) output on the screen in the formated view people's list
+
+The program has the following input: 
+1) the input from the keyboard. The name of file is typed in command line.
+For this purpose it is used arguments in the main function:
+argc-the quantity of arguments, *argv[]-the number of argument. 
+*argv[]-returns the name of file
+2) The input from the file "peoplefile"ù which has the following format: 
+person1
+birthday
+person2
+birthday
+person3 
+birthday
+Where the birthday in the format: mm/dd/yyyy.
+The output is created on the screen in columns in the following format:
+Name			Day		Birthday		Age
+------------------- ------------- -------------------- -------------
+person's name		day of week   mm/dd/yyyy		person's age
+Finally, people's list is represented on the screen
+
+The program has the following algoritms: 
+1) Sorting peeople's information descendly according to his/her age.
+
+Program design
+1) The arguments in the main function were used which are argc and *argv[]. 
+The arguments are necessary to stores the name of the file which is typed from the keyboard. 
+2) The program includes the composition of classes and objects. For example, 
+it was used the methods of class Data in the class Person where another methods 
+calculated people's age, days of week. 
+3) It was also used the default constructor which is 
+necessary to create the array of objects. 
+4) It was created the array of objects of 
+class person in the main function. It was necessary for people's list.
+
+The program has the following files:
+File		function	 	description
+Main.cpp 	  main()		main function	
+date.h		Declaration		Declaration of class Data
+date.o		Implementation	Implementation of class Data
+person.h	Declaration		Declaration of class Person
+person.cpp	Implementation	Implementation of class Person
+
+The program was tasted during input from the file
+1) Three arguments were typed from the keyboard such as the name of the program, 
+the name of the file and any other characters. It was mistake. Therefore it was 
+created the check of errors. If you type more than two arguments it will appear mistake message.
+2) The data file was tested. If file doesn't open it appears mistake message. 

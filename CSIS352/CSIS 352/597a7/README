@@ -1,0 +1,57 @@
+// Andrey Vasilyev
+// CSIS 352
+// README
+// 05/05/2009
+// Assignment 7
+
+The description of the program
+The program demonstrates usage of graphs declared with different data types. 
+The program creates the graph that has vertexes represented as cities and edges as 
+distances between the cities. The program has all functionality to insert one way or 
+two-way edges with weights or without weights between vertexes. The program also 
+keeps track of all associated edges. For example, if one vertex is removed from the 
+graph with its edges all associated edges are also searched in the rest of 
+vertexes and finally removed. 
+The program allows create and manipulate graph dynamically.
+
+Input of the program
+The input is not intended in this program.
+
+Output of the program 
+1) The program outputs the graph with vertexes represented as cities and directions 
+between them as edges. The program outputs the name of the city first as vertex and 
+then all associated direction to other cities (edges) with weights or without them.   
+When the program tests the methods like delete or insert updated graph is output to 
+the screen
+2) Then the graph was declared with data type Employee and the program outputs 
+employees’ names as vertexes and relationships between them as edges.  
+3) After this the program test the graph on integer numbers and outputs appropriate 
+graph with vertexes represented as numbers. 
+
+Design of the program
+The program uses vector container from Standard Template Library. The program has the 
+design based on template classes, dynamic vectors and pointers. The program has the 
+base class vertex that keeps the main values and it also has the array of pointers 
+to vertexes declared with the same data type. Moreover the class vertex also has 
+array of weights that correspond to each pointer (in our case edge). The design of 
+class graph is based on the vertex class. However, the graph class keeps the array of 
+objects of class vertex so that the graph class has all functionality to insert new 
+vertexes, set edges between them, weights and even type of relationships Directed or 
+Undirected and Weighted or Unweighted edges. The program has overloaded constructors. 
+
+A listing of the files in the distribution 
+file				function			description
+main.cpp 			main				main function
+employee.h			employee			employee class specification
+employee.cpp		employee methods	employee class implementation
+vertex.h			vertex				vertex class specification and
+										implementation	
+graph.h			graph					graph class specification and 
+										implementation
+
+Test of the program
+The program used different data types to test template class Graph. The first time the 
+class graph was declared as string data type, then as data type of class employee and at 
+the end as integer. The program used all methods of class Graph and output the results of 
+the methods on the screen. All errors were eliminated and their probability was 
+minimized to zero. 

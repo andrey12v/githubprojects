@@ -1,0 +1,22 @@
+C:\Documents and Settings\br161\Desktop\Ex20_5\Ex20_5\bin\Debug\Baseball.mdf
+C:\Documents and Settings\br161\Desktop\Ex20_5\Ex20_5\bin\Debug\Baseball_log.ldf
+C:\Documents and Settings\br161\Desktop\Ex20_5\Ex20_5\bin\Debug\Ex20_5.exe.config
+C:\Documents and Settings\br161\Desktop\Ex20_5\Ex20_5\bin\Debug\Ex20_5.exe
+C:\Documents and Settings\br161\Desktop\Ex20_5\Ex20_5\bin\Debug\Ex20_5.pdb
+C:\Documents and Settings\br161\Desktop\Ex20_5\Ex20_5\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\br161\Desktop\Ex20_5\Ex20_5\obj\Debug\Ex20_5.Baseball.resources
+C:\Documents and Settings\br161\Desktop\Ex20_5\Ex20_5\obj\Debug\Ex20_5.Properties.Resources.resources
+C:\Documents and Settings\br161\Desktop\Ex20_5\Ex20_5\obj\Debug\Ex20_5.csproj.GenerateResource.Cache
+C:\Documents and Settings\br161\Desktop\Ex20_5\Ex20_5\obj\Debug\Ex20_5.exe
+C:\Documents and Settings\br161\Desktop\Ex20_5\Ex20_5\obj\Debug\Ex20_5.pdb
+D:\C#programming\A10\Ex20_5\Ex20_5\bin\Debug\Ex20_5.exe.config
+D:\C#programming\A10\Ex20_5\Ex20_5\obj\Debug\Ex20_5.exe
+D:\C#programming\A10\Ex20_5\Ex20_5\obj\Debug\Ex20_5.pdb
+D:\C#programming\A10\Ex20_5\Ex20_5\bin\Debug\Baseball.mdf
+D:\C#programming\A10\Ex20_5\Ex20_5\bin\Debug\Baseball_log.ldf
+D:\C#programming\A10\Ex20_5\Ex20_5\bin\Debug\Ex20_5.exe
+D:\C#programming\A10\Ex20_5\Ex20_5\bin\Debug\Ex20_5.pdb
+D:\C#programming\A10\Ex20_5\Ex20_5\obj\Debug\ResolveAssemblyReference.cache
+D:\C#programming\A10\Ex20_5\Ex20_5\obj\Debug\Ex20_5.Baseball.resources
+D:\C#programming\A10\Ex20_5\Ex20_5\obj\Debug\Ex20_5.Properties.Resources.resources
+D:\C#programming\A10\Ex20_5\Ex20_5\obj\Debug\Ex20_5.csproj.GenerateResource.Cache

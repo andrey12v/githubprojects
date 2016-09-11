@@ -1,0 +1,16 @@
+I:\C#programming\A06\Ex13_8\Ex13_8\obj\Debug\ResolveAssemblyReference.cache
+I:\C#programming\A06\Ex13_8\Ex13_8\obj\Debug\Ex13_8.GuessNumber.resources
+I:\C#programming\A06\Ex13_8\Ex13_8\obj\Debug\Ex13_8.Properties.Resources.resources
+I:\C#programming\A06\Ex13_8\Ex13_8\obj\Debug\Ex13_8.csproj.GenerateResource.Cache
+I:\C#programming\A06\Ex13_8\Ex13_8\bin\Debug\Ex13_8.exe
+I:\C#programming\A06\Ex13_8\Ex13_8\bin\Debug\Ex13_8.pdb
+I:\C#programming\A06\Ex13_8\Ex13_8\obj\Debug\Ex13_8.exe
+I:\C#programming\A06\Ex13_8\Ex13_8\obj\Debug\Ex13_8.pdb
+D:\C#programming\A06\Ex13_8\Ex13_8\obj\Debug\Ex13_8.exe
+D:\C#programming\A06\Ex13_8\Ex13_8\obj\Debug\Ex13_8.pdb
+D:\C#programming\A06\Ex13_8\Ex13_8\bin\Debug\Ex13_8.exe
+D:\C#programming\A06\Ex13_8\Ex13_8\bin\Debug\Ex13_8.pdb
+D:\C#programming\A06\Ex13_8\Ex13_8\obj\Debug\ResolveAssemblyReference.cache
+D:\C#programming\A06\Ex13_8\Ex13_8\obj\Debug\Ex13_8.GuessNumber.resources
+D:\C#programming\A06\Ex13_8\Ex13_8\obj\Debug\Ex13_8.Properties.Resources.resources
+D:\C#programming\A06\Ex13_8\Ex13_8\obj\Debug\Ex13_8.csproj.GenerateResource.Cache

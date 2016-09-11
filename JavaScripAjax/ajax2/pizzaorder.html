@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Pizza Order - Ajax and PHP</title>
+
+<script language="javascript" type="text/javascript">
+	var request = false;
+	 
+	try{
+		request = new XMLHttpRequest();
+	} 	catch ( tryMicrosoft) {
+		try {
+			request = new ActiveXObject("Msxml2.XMLHTTP");
+		}	catch ( otherMicrosoft ) {
+			try {
+				request = new ActiveXObject("Microsoft.XMLHTTP");
+			}	catch ( failed ) {
+					request = false;
+			}		
+		}
+	}
+	
+	if ( !request )
+		alert("Error initializing XMLHttpRequest!");	
+	else
+		alert("XMLHttpRequest object has been created!");	
+
+
+	function getCustomerInfo()
+	{
+		var phone = document.getElementById( "phone" ).value;
+		var url = "lookupCustomer.php?phone=" + escape(phone);
+		request.open("GET", url, true);
+		request.onreadystatechange = updatePage;
+		request.send(null);
+	}
+
+	function updatePage()
+	{
+		if ( request.readyState == 4 ) {
+			if ( request.status == 200 ) {
+				var response = request.responseText.split("|");
+				document.getElementById( "order" ).value = response[0].replace(/@/g, "\n");
+				document.getElementById( "address" ).innerHTML = response[1].replace(/@/g, "<br />");
+
+			} else
+				alert("Server is done!");
+		}
+	}
+
+</script>
+
+</head>
+
+<body>
+<p style="font-size: 18px; text-align: justify; padding: 10px;">The current webpage sends Ajax request to a web server with the phone number you entered on the form. If you are already existing customer and you entered the phone numbers: (111)222-3333 or (333)444-5555 then the web server will return your current address and your prior order. Otherwise, the web server will return you nothing and the form will request you to fill out the fields.<br />  
+This webpage sends the phone number through Ajax request to PHP file that contains customer’s information and PHP file process it accordingly. You can download this Ajax exercise from THIS LINK if you decide to take a look it. 
+</p>
+<p><img src="pizza.jpg" alt="Break Neck Pizza" /> </p>
+<form method="post" action="order.php">
+ <p>Enter your phone number:
+   <input type="text" size="14" name="phone" id="phone" onChange="getCustomerInfo();" />
+ </p>
+ <p>Your order will be delivered to:</p>
+ <div id="address"></div>
+ <p>Type your order in here:</p>
+ <p><textarea name="order" rows="6" cols="50" id="order"></textarea></p>
+ <p><input type="submit" value="Order Pizza" id="submit" /></p>
+</form>
+</body>
+
+</html>

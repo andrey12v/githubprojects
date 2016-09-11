@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Exercise 9.26, Assignment 5</title>
+    <style type="text/css">
+    .title {
+	    color:#283f71;
+	    font-weight:bold;
+	    text-align:center;
+	    font-size: 14pt;
+    }
+    
+    </style>
+    
+  <SCRIPT type=text/javascript>
+         var coinHead, coinTail;
+         function setVariables()
+         {
+            coinHead=0; 
+            coinTail=0;
+         }
+         
+         function flipCoin()
+         {
+            if(getCoinSide()==true)
+            {
+                coinHead=coinHead+1;
+                document.getElementById("txtHead").value=coinHead;
+            }
+            else
+            {
+                coinTail=coinTail+1;
+                document.getElementById("txtTail").value=coinTail;
+            }
+         }
+         
+         function getCoinSide()
+         {
+            var result=Math.floor(Math.random()*2);
+            if(result==1)
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
+         }
+                  
+      </SCRIPT>
+
+</head>
+<body onload="setVariables()">
+<form action="">
+<p class="title">
+    Coin tossing</p>
+<br />    
+<table>
+<tr>
+<td>Heads
+</td>
+<td>
+    &nbsp;
+    <input id="txtHead" type="text" />
+</td>
+</tr>
+<tr>
+<td>Tails
+</td>
+<td>
+    &nbsp;
+    <input id="txtTail" type="text" />
+</td>
+</tr>
+<tr>
+<td>
+    <input id="btnFlip" type="button" value="Flip Coin" onclick="flipCoin()" /></td>
+</tr>
+</table>
+    
+<center><h2><a href=assignment5.htm>Go back to assignment 5</a></h2></center>
+</form>
+</body>
+</html>

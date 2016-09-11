@@ -1,0 +1,16 @@
+bin\Release\BankLibrary.dll
+bin\Release\BankLibrary.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\BankLibrary.Properties.Resources.resources
+obj\Release\BankLibrary.csproj.GenerateResource.Cache
+obj\Release\BankLibrary.dll
+obj\Release\BankLibrary.pdb
+bin\Debug\BankLibrary.dll
+bin\Debug\BankLibrary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BankLibrary.Properties.Resources.resources
+obj\Debug\BankLibrary.csproj.GenerateResource.Cache
+obj\Debug\BankLibrary.dll
+obj\Debug\BankLibrary.pdb
+obj\Release\BankUIForm.resources
+obj\Debug\BankUIForm.resources

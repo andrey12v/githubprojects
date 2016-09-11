@@ -1,0 +1,9 @@
+obj\Debug\Ex18_6.exe
+obj\Debug\Ex18_6.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Ex18_6.Properties.Resources.resources
+obj\Debug\Ex18_6.ReadWriteFile.resources
+obj\Debug\Ex18_6.csproj.GenerateResource.Cache
+bin\Debug\Ex18_6.exe
+bin\Debug\Ex18_6.pdb
+bin\Debug\BankLibrary.dll
