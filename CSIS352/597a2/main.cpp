@@ -15,7 +15,7 @@ using namespace TimeNameSpace;  // include namespace of the class Time
 int main()
 {
     Date d1; 
-    	/*try
+     try
      {	
         //test of the output format for class Date
 	    Date d1(1,1,2000);
@@ -325,6 +325,6 @@ int main()
 		cout<<timeExceptionObj.what()<<endl;
 	 }
 
-*/
+
    return 0;
 }
