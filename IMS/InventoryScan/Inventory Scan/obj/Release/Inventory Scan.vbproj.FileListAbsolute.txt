@@ -1,0 +1,13 @@
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\bin\Release\Inventory Scan.exe
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\bin\Release\Inventory Scan.pdb
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\bin\Release\Inventory Scan.xml
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\obj\Release\Inventory_Scan.Form1.resources
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\obj\Release\Inventory_Scan.Resources.resources
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\obj\Release\Inventory Scan.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\obj\Release\Inventory Scan.exe
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\obj\Release\Inventory Scan.xml
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\obj\Release\Inventory Scan.pdb
+C:\MY FILES\IMS\Inventory Scan\Inventory Scan\obj\Release\Inventory Scan.exe
+C:\MY FILES\IMS\Inventory Scan\Inventory Scan\obj\Release\Inventory Scan.xml
+C:\MY FILES\IMS\Inventory Scan\Inventory Scan\obj\Release\Inventory Scan.pdb

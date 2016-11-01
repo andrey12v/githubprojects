@@ -1,0 +1,8 @@
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\DivaReports\DivaReports\bin\Release\DivaReports.dll
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\DivaReports\DivaReports\bin\Release\DivaReports.pdb
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\DivaReports\DivaReports\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\DivaReports\DivaReports\obj\Release\DivaReports.dll
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\DivaReports\DivaReports\obj\Release\DivaReports.pdb
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\DivaReports\DivaReports\obj\Release\DivaReports.FormDivaReports.resources
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\DivaReports\DivaReports\obj\Release\DivaReports.csproj.GenerateResource.Cache
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\DivaReports\DivaReports\bin\Release\DivaLink.dll

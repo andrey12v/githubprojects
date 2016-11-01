@@ -1,0 +1,43 @@
+C:\Documents and Settings\Kyle.Rosenau\Local Settings\Application Data\Temporary Projects\Inventory Scan\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Kyle.Rosenau\Local Settings\Application Data\Temporary Projects\Inventory Scan\obj\Debug\Inventory_Scan.Form1.resources
+C:\Documents and Settings\Kyle.Rosenau\Local Settings\Application Data\Temporary Projects\Inventory Scan\obj\Debug\Inventory_Scan.Resources.resources
+C:\Documents and Settings\Kyle.Rosenau\Local Settings\Application Data\Temporary Projects\Inventory Scan\obj\Debug\Inventory Scan.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Kyle.Rosenau\Local Settings\Application Data\Temporary Projects\Inventory Scan\bin\Debug\Inventory Scan.exe
+C:\Documents and Settings\Kyle.Rosenau\Local Settings\Application Data\Temporary Projects\Inventory Scan\bin\Debug\Inventory Scan.pdb
+C:\Documents and Settings\Kyle.Rosenau\Local Settings\Application Data\Temporary Projects\Inventory Scan\bin\Debug\Inventory Scan.xml
+C:\Documents and Settings\Kyle.Rosenau\Local Settings\Application Data\Temporary Projects\Inventory Scan\obj\Debug\Inventory Scan.exe
+C:\Documents and Settings\Kyle.Rosenau\Local Settings\Application Data\Temporary Projects\Inventory Scan\obj\Debug\Inventory Scan.xml
+C:\Documents and Settings\Kyle.Rosenau\Local Settings\Application Data\Temporary Projects\Inventory Scan\obj\Debug\Inventory Scan.pdb
+C:\Documents and Settings\Kyle.Rosenau\My Documents\Visual Studio 2008\Projects\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.exe
+C:\Documents and Settings\Kyle.Rosenau\My Documents\Visual Studio 2008\Projects\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.xml
+C:\Documents and Settings\Kyle.Rosenau\My Documents\Visual Studio 2008\Projects\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.pdb
+C:\Documents and Settings\Kyle.Rosenau\My Documents\Visual Studio 2008\Projects\Inventory Scan\Inventory Scan\bin\Debug\Inventory Scan.exe
+C:\Documents and Settings\Kyle.Rosenau\My Documents\Visual Studio 2008\Projects\Inventory Scan\Inventory Scan\bin\Debug\Inventory Scan.pdb
+C:\Documents and Settings\Kyle.Rosenau\My Documents\Visual Studio 2008\Projects\Inventory Scan\Inventory Scan\bin\Debug\Inventory Scan.xml
+C:\Documents and Settings\Kyle.Rosenau\My Documents\Visual Studio 2008\Projects\Inventory Scan\Inventory Scan\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Kyle.Rosenau\My Documents\Visual Studio 2008\Projects\Inventory Scan\Inventory Scan\obj\Debug\Inventory_Scan.Form1.resources
+C:\Documents and Settings\Kyle.Rosenau\My Documents\Visual Studio 2008\Projects\Inventory Scan\Inventory Scan\obj\Debug\Inventory_Scan.Resources.resources
+C:\Documents and Settings\Kyle.Rosenau\My Documents\Visual Studio 2008\Projects\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.vbproj.GenerateResource.Cache
+C:\Documents and Settings\luke.hippe.IMSNET\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.exe
+C:\Documents and Settings\luke.hippe.IMSNET\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.xml
+C:\Documents and Settings\luke.hippe.IMSNET\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.pdb
+C:\Documents and Settings\luke.hippe.IMSNET\Desktop\Inventory Scan\Inventory Scan\bin\Debug\Inventory Scan.exe
+C:\Documents and Settings\luke.hippe.IMSNET\Desktop\Inventory Scan\Inventory Scan\bin\Debug\Inventory Scan.pdb
+C:\Documents and Settings\luke.hippe.IMSNET\Desktop\Inventory Scan\Inventory Scan\bin\Debug\Inventory Scan.xml
+C:\Documents and Settings\luke.hippe.IMSNET\Desktop\Inventory Scan\Inventory Scan\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\luke.hippe.IMSNET\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory_Scan.Form1.resources
+C:\Documents and Settings\luke.hippe.IMSNET\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory_Scan.Resources.resources
+C:\Documents and Settings\luke.hippe.IMSNET\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Kyle.Rosenau\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.exe
+C:\Documents and Settings\Kyle.Rosenau\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.xml
+C:\Documents and Settings\Kyle.Rosenau\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.pdb
+C:\Documents and Settings\Kyle.Rosenau\Desktop\Inventory Scan\Inventory Scan\bin\Debug\Inventory Scan.exe
+C:\Documents and Settings\Kyle.Rosenau\Desktop\Inventory Scan\Inventory Scan\bin\Debug\Inventory Scan.pdb
+C:\Documents and Settings\Kyle.Rosenau\Desktop\Inventory Scan\Inventory Scan\bin\Debug\Inventory Scan.xml
+C:\Documents and Settings\Kyle.Rosenau\Desktop\Inventory Scan\Inventory Scan\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Kyle.Rosenau\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory_Scan.Form1.resources
+C:\Documents and Settings\Kyle.Rosenau\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory_Scan.Resources.resources
+C:\Documents and Settings\Kyle.Rosenau\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.exe
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.xml
+C:\Documents and Settings\Andrey.Vasilyev\Desktop\Inventory Scan\Inventory Scan\obj\Debug\Inventory Scan.pdb
