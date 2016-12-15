@@ -1,8 +1,0 @@
-#include<iostream>
-
-#include "date.h"
-
-int main(){
-
-return 0;
-}

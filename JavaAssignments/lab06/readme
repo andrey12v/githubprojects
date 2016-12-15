@@ -1,0 +1,25 @@
+Assignment Prefix:     Lab06
+Due Date:     Friday, Oct. 7th @ 11:59pm
+Points:   100
+This is an individual assignment.
+Restrictions:  you cannot use any methods from the Java Array(s) class to copy an array, check for equality, or otherwise manipulate an array.  You must write the Java code to perform these functions.  
+The above restrictions do not apply to any of the classes copied from the textbook.
+Create a NetBeans project named Lab06 and ensure it is saved to a location like desktop or your flash drive. In the project you will do the following:
+For this assignment you are going to test the assertion that a dynamic list that expands geometrically performs better than a dynamic list that expands arithmetically.
+
+Implement the textbook ArrayList using Code Fragments 7.2 and 7.3.
+Note that this will require that you implement the List interface in Code Fragment 7.1.
+You should also note that the ArrayList defined in Code Fragments 7.2 and 7.3 has fixed capacity.  Modify your ArrayList so that it dynamically increases in size as described in Code Fragments 7.4 and 7.5.
+
+Make a copy or your ArrayList and rename it ArrayListGeometric.  Add a parameter to the constructors that will allow you to indicate how large to increase the array capacity on each call to the resize method.  This parameter should allow for values like: 0.1, 0.5, 1.0, 1.5, 2.0, etc.  Adjust other methods as required to use this parameter as a multiplier of the array capacity on each call to the resize method.
+
+Make a copy of your ArrayList and rename it ArrayListArithmetic.  Add a parameter to the constructors that will allow you to indicate how large to increase the array capacity on each call to the resize method.  This parameter should allow for values like: 1, 10, 50, 100, etc.  Adjust other methods as required to use this parameter as fix increase to the array capacity on each call to the resize method.
+
+Modify and add appropriate methods in both the ArrayListGeometric and ArrayListArithmetic classes so that the number of copy operations can be reported each time the resize method is called.  The number of copy operations should be an accumulation of the counts of copies for all calls to the resize method.
+
+Now develop a client program that will allow you compare your two implementations of ArrayList.  Include the following tests in your comparison:
+
+For each test add 1000 random integers to the end of your ArrayList and determine the total number of copy operation the resize method must make.
+For the ArrayListGeometric
+-	Vary the increase in size of the ArrayListGeometric from:
+-	0.1 to 3.1 in increments of 0.5

@@ -1,0 +1,65 @@
+Assignment Prefix:     lab12
+Points: 100
+Due Date:     Tuesday, December 6, 2016 @ 11:59pm
+
+For this assignment you may use any classes from the online version of the code for the textbook.  The textbook code is in a jar (Java archive) file which uses the zip file format.  One easy way to deal with a jar file is to rename the file with a .zip extension, use Windows Explorer to browse the zip archive, and copy and paste the necessary class files into your NetBeans project directory.
+Note that I still believe that there is a learning benefit from transcribing the code from the textbook but you are allowed to copy and paste the code from the online jar file.
+Task 1: 
+-	Create a new NetBeans project named Lab12
+-	Place the GraphExamples.java file from the online version of the code for the textbook into your project’s source code directory
+-	This GraphExamples.java file contains the main class.
+-	Add additional .java files from the online version of the code for the textbook until you are able to compile and run the main class without errors.
+-	Points will be deducted for any unnecessary Java classes that are included in your assignment.
+-	Notice that the output of the program is essentially the Adjacency List Structure described in section 14.2.2
+Task 2:
+-	Modify your project so that in addition to printing out the Adjacency List Structure it also prints out the Adjacency Matrix Structure as a nicely formatted ASCII table.
+-	Write your code so that:
+	o	 It uses the same input (i.e. an edge list).
+	o	It can correctly handle edge lists that represent
+		*	Directed or undirected graphs by using a boolean parameter as is already done to create the Adjacency List Structure.
+		*	Weighted or unweighted graphs automatically (without the use of a parameter) by examining the edge list.
+	o	Examples of the output can be found at the end of this assignment.
+
+Below is an example of what your output should look like:
+
+Figure 14.3
+Vertex BOS
+ [outgoing] 3 adjacencies: (MIA, 1) (SFO, 1) (JFK, 1)
+ [incoming] 1 adjacencies: (JFK, 1)
+Vertex DFW
+ [outgoing] 3 adjacencies: (LAX, 1) (ORD, 1) (SFO, 1)
+ [incoming] 3 adjacencies: (MIA, 1) (JFK, 1) (ORD, 1)
+Vertex JFK
+ [outgoing] 4 adjacencies: (BOS, 1) (MIA, 1) (DFW, 1) (SFO, 1)
+ [incoming] 1 adjacencies: (BOS, 1)
+Vertex LAX
+ [outgoing] 1 adjacencies: (ORD, 1)
+ [incoming] 2 adjacencies: (MIA, 1) (DFW, 1)
+Vertex MIA
+ [outgoing] 2 adjacencies: (LAX, 1) (DFW, 1)
+ [incoming] 3 adjacencies: (ORD, 1) (JFK, 1) (BOS, 1)
+Vertex ORD
+ [outgoing] 2 adjacencies: (MIA, 1) (DFW, 1)
+ [incoming] 2 adjacencies: (DFW, 1) (LAX, 1)
+Vertex SFO
+ [outgoing] 0 adjacencies:
+ [incoming] 3 adjacencies: (DFW, 1) (BOS, 1) (JFK, 1)
+
+Figure 14.3: 
++---------+---------+---------+---------+---------+---------+---------+---------+
+|         |    BOS  |    DFW  |    JFK  |    LAX  |    MIA  |    ORD  |    SFO  |
++---------+---------+---------+---------+---------+---------+---------+---------+
+|    BOS  |      0  |      0  |      1  |      0  |      1  |      0  |      1  |
++---------+---------+---------+---------+---------+---------+---------+---------+
+|    DFW  |      0  |      0  |      0  |      1  |      0  |      1  |      1  |
++---------+---------+---------+---------+---------+---------+---------+---------+
+|    JFK  |      1  |      1  |      0  |      0  |      1  |      0  |      1  |
++---------+---------+---------+---------+---------+---------+---------+---------+
+|    LAX  |      0  |      0  |      0  |      0  |      0  |      1  |      0  |
++---------+---------+---------+---------+---------+---------+---------+---------+
+|    MIA  |      0  |      1  |      0  |      1  |      0  |      0  |      0  |
++---------+---------+---------+---------+---------+---------+---------+---------+
+|    ORD  |      0  |      1  |      0  |      0  |      1  |      0  |      0  |
++---------+---------+---------+---------+---------+---------+---------+---------+
+|    SFO  |      0  |      0  |      0  |      0  |      0  |      0  |      0  |
++---------+---------+---------+---------+---------+---------+---------+---------+

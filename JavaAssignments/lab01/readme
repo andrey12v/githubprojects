@@ -1,0 +1,41 @@
+Assignment prefix:  Lab01
+Points:  100
+Individual Assignment
+Due Thursday, 09/01, at 11:59pm.
+
+TASK:
+
+You want to develop a Java program that will allow you to keep track of contacts in your address book.  In reviewing your address book, you notice that your contacts fall into two categories: Friend contacts and Business contacts.  The following table shows the information that you keep in your address book for each type of contact.
+
+Field		Friend	Business
+Name		Yes	Yes
+Title		No	Yes
+Business Name	No	Yes
+Address		Yes	Yes
+Phone		Yes	Yes
+Birthday 	Yes	No
+Favorite Movie	Yes	No
+
+
+Create a NetBeans project named Lab01
+
+In this project create three classes named Contact, Friend and Business such that:
+-	The Contact class contains all of the fields common to both types of entries in your address book.
+-	The Friend class is a subclass of Contact and contains only those fields that are specific to the Friend entries in your address book.
+-	The Business class is a subclass of Contact and contains only those fields that are specific to the Business entries in your address book.
+-	Each of these classes contains all of the “normally expected” methods.
+	o	At least one constructor
+	o	A getter and setter (accessor and mutator) method for each instance/class variable
+	o	A toString method
+	o	An equals method
+-	Create your classes so that you can keep track of the 
+	o	Number of Friend contacts
+	o	Number of Business contacts
+	o	Total number of contacts
+
+Create a fourth class name Client that will be used to test your other classes.  In the Client class:
+-	Create an array named addressBook of Contact
+-	Add a minimum of three Business contacts to the array
+-	Add a minimum of three Friend contacts to the array
+-	Data for each of the contacts must be entered from the keyboard.
+-	Test all of the methods in Contact, Friend and Business that are not explicitly tested in their respective class definitions.
