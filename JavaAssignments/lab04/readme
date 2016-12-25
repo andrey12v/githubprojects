@@ -1,0 +1,24 @@
+Assignment Prefix:     Lab04
+Due Date:     Friday, Sep. 23rd @ 11:59pm
+Points:   100
+
+This is an individual assignment.
+Restrictions:  you cannot use any methods from the Java Array(s) class to copy an array, check for equality, or otherwise manipulate an array.  You must write the Java code to perform these functions.
+Create a NetBeans project named Lab04 and ensure it is saved to a location like desktop or your flash drive. In the project you will do the following:
+
+In this assignment you are to create a Recursion Class that will implement the following recursive algorithms:
+
+* Implement a recursive algorithm to compute the integer part of the base-two logarithm of n using only addition and integer division.
+
+* Implement a recursive algorithm to compute the product of two positive integers, m and n, using only addition and subtraction.
+
+* Implement Isabel’s technique for summing the values in an array of n integers.
+
+Isabel has an interesting way of summing up the values in an array A of n integers,
+where n is a power of two. She creates an array B of half the size of A and sets
+B[i] = A[2i]+ A[2i+ 1], for i = 0,1, . . . , (n/2)- 1. If B has size 1, then she
+outputs B[0]. Otherwise, she replaces A with B, and repeats the process.
+
+* Implement a recursive method with calling signature find(path, filename) that reports all entries of the file system rooted at the given path having the given filename.
+
+Create a Recursion_Client Class that will fully test each of the recursive methods that you created above in an interactive fashion.  
